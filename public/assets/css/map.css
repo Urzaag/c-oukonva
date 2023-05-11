@@ -5,7 +5,7 @@ body {
 .cé-map {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 95vh;
 }
 
 .cé-map h1 {
@@ -17,18 +17,36 @@ body {
     letter-spacing: 1px;
 }
 
-.célamap {
+.cé-map h5 {
+    font-family: var(--cé-font-text);
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.cé-map p {
+    font-family: var(--cé-font-text);
+    text-align: center;
+}
+
+.cémap {
     position: relative;
 }
 
+.célamap {
+    height: 100%;
+}
+
+/* Position camping nord */
 .cé-pin1 {
     width: 2rem;
     position: absolute;
-    right: 595px;
-    top: 20px;
+    right: 30%;
+    top: 3%;
     z-index: 1;
 }
 
+/* Position camping océan */
 .cé-pin2 {
     width: 2rem;
     position: absolute;
@@ -37,6 +55,7 @@ body {
     z-index: 1;
 }
 
+/* Position camping Pyrénées */
 .cé-pin3 {
     width: 2rem;
     position: absolute;
@@ -45,6 +64,7 @@ body {
     z-index: 1;
 }
 
+/* Position camping Montpellier*/
 .cé-pin4 {
     width: 2rem;
     position: absolute;
@@ -53,6 +73,7 @@ body {
     z-index: 1;
 }
 
+/* Position camping Nice */
 .cé-pin5 {
     width: 2rem;
     position: absolute;
@@ -62,34 +83,120 @@ body {
 }
 
 .célacard {
-    width: 20rem;
+    width: 25rem;
     background: var(--cé-yellow-dark);
     font-family: var(--cé-font-text);
 }
 
+/* Card 1 couple */
+.célacard1 {
+    position: relative;
+    height: 20rem;
+}
+
+.célacard1 .card-body h5 {
+    width: 25rem;
+    position: absolute;
+    left: 0rem;
+}
+
+.célacard1 .card-body p {
+    width: 10rem;
+    position: absolute;
+    top: 7rem;
+    left: 14rem;
+}
+
+.célacard1 img {
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Card 2 barbecue */
+.célacard2 {
+    position: relative;
+    height: 20rem;
+}
+
+.célacard2 .card-body {
+    width: 13rem;
+    position: absolute;
+    left: 12rem;
+}
+
+.célacard2 img {
+    width: 11rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+
+/* Card 3 peche à la truite */
+.célacard3 {
+    position: relative;
+    height: 20rem;
+}
+
+.célacard3 .card-body h5 {
+    width: 25rem;
+    position: absolute;
+    left: 0rem;
+}
+
+.célacard3 .card-body p {
+    width: 12rem;
+    position: absolute;
+    left: 12rem;
+    top: 4rem;
+}
+
+.célacard3 img {
+    width: 17rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+
+/* Card 4 sosie */
+.célacard4 {
+    position: relative;
+    height: 20rem;
+}
+
+.célacard4 .card-body{
+    width: 15rem;
+    position: absolute;
+    left: 10rem;
+}
+
+.célacard4 img {
+    width: 14rem;
+    position: absolute;
+    bottom: 0rem;
+}
+
+/* Card 5 miss camping */
 .célacard5 {
     position: relative;
+    height: 20rem;
 }
 
 .célacard5 .card-body{
-    height: 20rem;
-
+    width: 15rem;
+    position: relative;
+    left: 10rem;
 }
 
 .célacard5 img {
     width: 18rem;
     position: absolute;
-    top: -3rem;
-    left: -5rem;
+    bottom: -1rem;
+    left: -2rem;
 }
 
-.célacard5 .card-body {
-}
-
-.célacard1, .célacard2, .célacard3, .célacard4, .célacard5 {
+.display1, .display2, .display3, .display4, .display5 {
     display: none;
 }
 
-.cé-pin {
-    width: 5rem;
-}
