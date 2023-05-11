@@ -2,6 +2,7 @@
 
 {% block content %}
     <body>
+    <section class="accueuil">
     <div class="cé-navbar">
         <img class="cé-place-apero" src="assets/images/place-apero.jpeg" alt="">
         <img class="cé-bagnole" src="assets/images/bagnole.png" alt="bagnole">
@@ -39,7 +40,11 @@
             <img src="/assets/images/boulespétanque.png" class="cé-pétanque-boule cé-pétanque-boule-2">
             <img src="/assets/images/boulespétanque.png" class="cé-pétanque-boule cé-pétanque-boule-3">
         </div>
-        <p>Nulla hendrerit accumsan odio, aliquet vulputate tellus maximus ac. Curabitur euismod finibus ullamcorper. Donec vel ex nec lacus semper gravida eget a quam. Praesent at ligula sit amet enim hendrerit varius. Aenean ac lacus nulla. Proin faucibus quis purus quis sagittis. Etiam eu elit ut risus dapibus consequat ac ac lacus. Nam efficitur eros non viverra laoreet. Vestibulum nec consectetur nisi, quis tincidunt eros. Aenean condimentum erat quis urna efficitur, ut fringilla neque volutpat. Suspendisse mauris dolor, porta eget nisi quis, tempor laoreet enim. Fusce nulla dolor, varius laoreet aliquet nec, maximus sit amet sem. Aliquam aliquet ex vitae gravida feugiat. Donec vitae elementum urna, vitae elementum sem. Vestibulum vulputate, diam euismod scelerisque scelerisque, tellus risus malesuada turpis, et aliquam ex leo eget mauris.</p>
+        <p>Bienvenue sur Céoukonva, le site ultime de réservation de camping pour les bons vivants assumés ! Préparez-vous à vivre des aventures en plein air, avec une dose d'humour gras et lourd. Notre concept unique repose sur des questions décalées pour vous guider vers les campings qui correspondent à votre style de vie particulier.</p>
+
+        <p>Envie d'une bière fraîche à portée de main ? D'un barbecue qui fume ? Ou peut-être d'une sono puissante pour mettre l'ambiance ? Quelles que soient vos préférences de camping, nous avons le lieu idéal pour vous. Choisissez parmi une sélection de campings accueillants où vous pourrez laisser libre cours à votre côté beauf sans jugement.</p>
+
+           <p>Alors, préparez vos tongs, sortez vos chemises hawaïennes et rejoignez-nous sur Céoukonva pour vivre des vacances mémorables. Préparez-vous à dire adieu aux conventions et à plonger dans l'univers du camping beauf !</p>
         <h1>CéKOIKéMIEU ?</h1>
         <form method="post" action="map/sort">
             <div class="containerQuestionsGlobal">
@@ -69,7 +74,7 @@
                 </div>
             <div class="containerQuestions questions1">
                         <div class="muletGlobal questionGlobal">
-                            <input type="checkbox" class="checkbox" value="mulet" name="question3" id="mulet" >
+                            <input type="checkbox" class="checkbox" value="mulet" name="question3" id="mulet">
                             <label for="mulet" class="btn mulet orange">Mulet</label>
                             <img class="muletImage" src="/assets/images/mulet.png" alt="">
                         </div>
@@ -88,7 +93,7 @@
                             <div class="ricardGlobal questionGlobal">
                                 <input type="checkbox" class="checkbox" value="ricard" name="question4" id="ricard">
                                 <label for="ricard" class="btn ricard jaune">Ricard</label>
-                                <img class="ricardImage" src="/assets/images/ricard.png" alt="">
+                                <img class="ricardImage" src="/assets/images/ricardverre.png" alt="">
                             </div>
                         </div>
             </div>
@@ -108,6 +113,7 @@
             <img src="assets/images/fire.gif">
             <img src="assets/images/fire.gif">
         </div>
+    </section>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"></script>
@@ -316,6 +322,139 @@
             }, 8000);
         })
 
+        let jonhyIs;
+        let sardouIs;
+        let claquetteIs;
+        let slipIs;
+        let muletIs;
+        let bobIs;
+        let biereIs;
+        let ricardIs;
+
+        let jonhy = document.querySelector('.jonhy');
+        let sardou = document.querySelector('.sardou');
+        let claquette = document.querySelector('.claquette');
+        let slip = document.querySelector('.slip');
+        let mulet = document.querySelector('.mulet');
+        let bob = document.querySelector('.bob');
+        let biere = document.querySelector('.biere');
+        let ricard = document.querySelector('.ricard');
+
+        let jonhyImage = document.querySelector('.jonhyImage');
+        let sardouImage = document.querySelector('.sardouImage');
+        let claquetteImage = document.querySelector('.claquetteImage');
+        let slipImage = document.querySelector('.slipImage');
+        let muletImage = document.querySelector('.muletImage');
+        let bobImage = document.querySelector('.bobImage');
+        let biereImage = document.querySelector('.biereImage');
+        let ricardImage = document.querySelector('.ricardImage');
+
+        function jonhyMove(){
+            if (typeof jonhyIs == 'null') {
+                jonhyImage.style.visibility = "unset";
+                jonhyIs = "unset";
+                console.log('11111111111111')
+            } else {
+                jonhyImage.style.visibility = "hidden";
+                jonhyIs = "hidden";
+                console.log('2222222222222222')
+            }
+        }
+        jonhy.addEventListener('click', jonhyMove);
+
+        function sardouMove(){
+            if ((typeof sardouIs == 'null') || (sardouIs = 'hidden')) {
+                sardouImage.style.visibility = "unset";
+                sardouIs = "unset";
+            } else {
+                sardouImage.style.visibility = "hidden";
+                sardouIs = "hidden";
+            }
+        }
+        sardou.addEventListener('click', sardouMove);
+
+        function claquetteMove(){
+            if ((typeof claquetteIs == 'null') || (claquetteIs = 'hidden')) {
+                claquetteImage.style.visibility = "unset";
+                claquetteIs = "unset";
+            } else {
+                claquetteImage.style.visibility = "hidden";
+                claquetteIs = "hidden";
+            }
+        }
+        claquette.addEventListener('click', claquetteMove);
+
+        function slipMove(){
+            if ((typeof slipIs == 'null') || (slipIs = 'hidden')) {
+                slipImage.style.visibility = "unset";
+                slipIs = "unset";
+            } else {
+                slipImage.style.visibility = "hidden";
+                slipIs = "hidden";
+            }
+        }
+        slip.addEventListener('click', slipMove);
+
+        function muletMove(){
+            if ((typeof muletIs == 'null') || (muletIs = 'hidden')) {
+                muletImage.style.visibility = "unset";
+                muletIs = "unset";
+            } else {
+                muletImage.style.visibility = "hidden";
+                muletIs = "hidden";
+            }
+        }
+        mulet.addEventListener('click', muletMove);
+
+        function bobMove(){
+            if ((typeof bobIs == 'null') || (bobIs = 'hidden')) {
+                bobImage.style.visibility = "unset";
+                bobIs = "unset";
+            } else {
+                bobImage.style.visibility = "hidden";
+                bobIs = "hidden";
+            }
+        }
+        bob.addEventListener('click', bobMove);
+
+        function biereMove(){
+            if ((typeof biereIs == 'null') || (biereIs = 'hidden')) {
+                biereImage.style.visibility = "unset";
+                biereIs = "unset";
+            } else {
+                biereImage.style.visibility = "hidden";
+                biereIs = "hidden";
+            }
+        }
+        biere.addEventListener('click', biereMove);
+
+        /*function ricardMove(){
+            if (typeof ricardIs == 'null') {
+                ricardImage.style.visibility = "unset";
+                ricardIs = "unset";
+                console.log('111111111')
+            } else if (ricardIs = 'unset') {
+                ricardImage.style.visibility = "hidden";
+                ricardIs = "hidden";
+                console.log('22222222222')
+            } else if (ricardIs = 'hidden'){
+                ricardImage.style.visibility = "unset";
+                ricardIs = "unset";
+                console.log('3333333333')
+
+            }*/
+        //}
+        function ricardMove(){
+            if ((typeof ricardIs == 'null') || (ricardIs = 'hidden')) {
+                ricardImage.style.visibility = "unset";
+                ricardIs = "unset";
+            } else {
+                ricardImage.style.visibility = "hidden";
+                ricardIs = "hidden";
+            }
+        }
+        ricard.addEventListener('click', ricardMove);
+
         // Fonction pour jouer le son
         function jouerSon() {
             let audio = new Audio('/assets/images/bigard.mp3');
@@ -329,6 +468,6 @@
         image.addEventListener('click', function() {
             jouerSon();
         });
-
     </script>
+
 {% endblock %}

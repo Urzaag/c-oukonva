@@ -3,13 +3,18 @@
 {% block content %}
     <div class="cé-map">
         <div>
-            <h1>CéLAKONVA !</h1>
+            <div class="cé-map-h1-container">
+                <h1>CéLAKONVA !</h1>
+            </div>
+
             <div class="display1">
                 <div class="card célacard célacard1 mb-3" id="célacard1">
                     <img src="/assets/images/couple.png" class="card-img-top" alt="camping card sous la neige">
                     <div class="card-body">
                         <h5 class="card-title">Domaine de la Pinède en Baie de Canche</h5>
                         <p class="card-text">Pour ces soirées hawaïenne qui font monter la température</p>
+                        <h6>Température actuelle : {{ temp1 }}°C <br>
+                        {{ phrase1 }}</h6>
                     </div>
                 </div>
             </div>
@@ -19,6 +24,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping Les Flots Bleus</h5>
                         <p class="card-text">Pour son prestigieux concours de barbecue. Jean-Michel le gagnant de l'année dernière sera là pour remettre son prix en jeu.</p>
+                        <p class="card2temp">Température actuelle : {{ temp2 }}°C</p>
+                        <p class="card2phrase">{{ phrase2 }}</p>
                     </div>
                 </div>
             </div>
@@ -28,6 +35,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping du Lac VAP!</h5>
                         <p class="card-text">Pour un vrai moment d'évasion à la montagne et le merveilleux duo pêche à la truite Heineken !</p>
+                        <h6 class="card3temp">Température actuelle : {{ temp3 }}°C <br>
+                        {{ phrase3 }}</h6>
                     </div>
                 </div>
             </div>
@@ -37,6 +46,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping Beach Garden</h5>
                         <p class="card-text">A NE PAS LOUPER ! Le sosie officiel de Johnny sera présent pour un concert exclusif.</p>
+                        <h6>Température actuelle : {{ temp4 }}°C <br>
+                        {{ phrase4 }}
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -46,17 +58,19 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping La Pierre Verte</h5>
                         <p class="card-text">Pour son célèbre concours miss camping présenté depuis 20 ans par Gégé.</p>
+                        <h6>Température actuelle : {{ temp5 }}°C <br>
+                        {{ phrase5 }}</h6>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cemap">
             <img class="célamap" src="/assets/images/carte.png" alt="carte de la France">
-            <img class="cé-pin1" src="/assets/images/pin.png">
-            <img class="cé-pin2" src="/assets/images/pin.png">
-            <img class="cé-pin3" src="/assets/images/pin.png">
-            <img class="cé-pin4" src="/assets/images/pin.png">
-            <img class="cé-pin5" src="/assets/images/pin.png">
+            <img class="cé-pin1 {{ displayPin1 }}" src="/assets/images/pin.png">
+            <img class="cé-pin2 {{ displayPin2 }}" src="/assets/images/pin.png">
+            <img class="cé-pin3 {{ displayPin3 }}" src="/assets/images/pin.png">
+            <img class="cé-pin4 {{ displayPin4 }}" src="/assets/images/pin.png">
+            <img class="cé-pin5 {{ displayPin5 }}" src="/assets/images/pin.png">
         </div>
     </div>
 
