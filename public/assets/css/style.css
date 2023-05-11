@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--cé-font-text);
+    cursor: url('/assets/images/ricard.png'), pointer;
 }
 
 .backgroundQuestions h1{
@@ -343,4 +344,9 @@ body {
     display: flex;
     margin-top: -15%;
     bottom: -10px;
+}
+
+.cé-h1camping {
+    text-align: center;
+    margin: 30px;
 }
