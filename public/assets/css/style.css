@@ -27,6 +27,7 @@ body {
     color: var(--cé-yellow-light);
     text-align: justify;
     padding-top: 10vh;
+    z-index: 2;
 }
 .questionGlobal {
     display: flex;
@@ -309,6 +310,36 @@ body {
     }
 }
 
+.cé-img-para * {
+    position: absolute;
+    width: 100px;
+}
+
+.cé-ricardlogo {
+    left: 0;
+    top: 102%;
+    width: 10px;
+}
+
+.cé-faisceau {
+    opacity: 0;
+    left: -1%;
+    top: 95%;
+    width: 400px;
+}
+
+.cé-mains {
+    opacity: 0;
+    left: 6%;
+    top: 135%;
+    width: 200px;
+}
+
+canvas {
+    left: 10%;
+    top: 147%;
+}
+
 .cé-tray {
     width: 220px;
     height: 150px;
@@ -318,7 +349,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 1vw 0 0 1vw;
+    right: 12%;
+    bottom: -145%;
 }
 
 .cé-drag-sausage-raw {
@@ -339,10 +371,15 @@ body {
     margin-top: -40%;
 }
 
+.cé-ricard-plein {
+    position: absolute;
+    width: 150px;
+    left: 8.5%;
+    bottom: -182%;
+}
+
 .cé-flammes {
     display: flex;
-    margin-top: -15%;
-    bottom: -10px;
 }
 
 

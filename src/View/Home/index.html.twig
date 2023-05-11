@@ -19,12 +19,18 @@
         <img src="/assets/images/picole.webp" alt="picole" class="cé-picole">
         <h1 class="cé-headertitle">CÉOUKONVA ??</h1>
     </div>
-    <div class="cé-tray">
-        <img class="cé-drag-sausage-raw cé-drag-sausage-raw-1" src="assets/images/saucisse-crue.png">
-        <img class="cé-drag-sausage-raw cé-drag-sausage-raw-2" src="assets/images/saucisse-crue.png">
-        <img class="cé-drag-sausage-raw cé-drag-sausage-raw-3" src="assets/images/saucisse-crue.png">
-    </div>
+
     <div class="backgroundQuestions">
+        <div class="cé-img-para">
+            <img src="/assets/images/ricardlogo.png" alt="" class="cé-ricardlogo">
+            <img src="/assets/images/faisceau.png" class="cé-faisceau">
+            <img src="/assets/images/hands.png" alt="hands" class="cé-mains">
+            <canvas id="canvasricard" width="50" height="400">
+                <svg id="cé-ricard-flow">
+                    <rect class="cé-ricard-flow" fill="#F2D44A" width="30" height="10" rx="50" />
+                </svg>
+            </canvas>
+        </div>
         <p>Nulla hendrerit accumsan odio, aliquet vulputate tellus maximus ac. Curabitur euismod finibus ullamcorper. Donec vel ex nec lacus semper gravida eget a quam. Praesent at ligula sit amet enim hendrerit varius. Aenean ac lacus nulla. Proin faucibus quis purus quis sagittis. Etiam eu elit ut risus dapibus consequat ac ac lacus. Nam efficitur eros non viverra laoreet. Vestibulum nec consectetur nisi, quis tincidunt eros. Aenean condimentum erat quis urna efficitur, ut fringilla neque volutpat. Suspendisse mauris dolor, porta eget nisi quis, tempor laoreet enim. Fusce nulla dolor, varius laoreet aliquet nec, maximus sit amet sem. Aliquam aliquet ex vitae gravida feugiat. Donec vitae elementum urna, vitae elementum sem. Vestibulum vulputate, diam euismod scelerisque scelerisque, tellus risus malesuada turpis, et aliquam ex leo eget mauris.</p>
         <h1>CéKOIKéMIEU ?</h1>
         <form method="post" action="/map">
@@ -81,11 +87,18 @@
             <div class="buttonSubmit"></div>
             <button class="submit wobble-hor-bottom" type="submit">Envoyer</button>
     </form>
-    <div class="cé-flammes">
-        <img src="assets/images/fire.gif">
-        <img src="assets/images/fire.gif">
-        <img src="assets/images/fire.gif">
+        <div class="cé-tray">
+            <img class="cé-drag-sausage-raw cé-drag-sausage-raw-1" src="assets/images/saucisse-crue.png">
+            <img class="cé-drag-sausage-raw cé-drag-sausage-raw-2" src="assets/images/saucisse-crue.png">
+            <img class="cé-drag-sausage-raw cé-drag-sausage-raw-3" src="assets/images/saucisse-crue.png">
+        </div>
     </div>
+    <img src="/assets/images/ricardplein.png" class="cé-ricard-plein">
+        <div class="cé-flammes">
+            <img src="assets/images/fire.gif">
+            <img src="assets/images/fire.gif">
+            <img src="assets/images/fire.gif">
+        </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"></script>
@@ -98,19 +111,168 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script>
-        //let tray = document.querySelector(".cé-tray");
-        /*gsap.utils.toArray(tray).forEach(tray => {
-            let saucisse = tray.querySelector(".cé-drag-sausage-raw");
-            Draggable.create(saucisse, {
-                onDragEnd: function() {
-                    gsap.to(saucisse, {
-                        rotation: 360,
-                        repeat: 4,
-                        ease: 'none'
-                    });
-                }
+        let audioplay = new Audio('assets/images/klaxon.mp3')
+
+        function letsplay(){
+            audioplay.play()
+            setInterval(function() {
+                audioplay.play();
+            }, 3000);
+        }
+        let tl = gsap.timeline({defaults: {repeat: -1,repeatDelay: 5}})
+        tl.from(".cé-bagnole", {xPercent: 800,duration: 3})
+        tl.call(function(){
+            setInterval(function() {
+                audioplay.play();
+            }, 8000);
+        });
+        gsap.to(".cé-bigard", {
+            rotation: 50,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-johnny", {
+            rotation: 20,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-patoche", {
+            rotation: 30,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-socks", {
+            rotation: 25,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-tshirt", {
+            rotation: 10,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-lagaf", {
+            rotation: 50,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-casque", {
+            rotation: 10,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-bobricard", {
+            rotation: 30,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-sacricard", {
+            rotation: 20,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        gsap.to(".cé-picole", {
+            rotation: 30,
+            repeat: -1,
+            ease: "none",
+            yoyo: true
+        });
+
+        let timelineRicardLogo = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".cé-ricardlogo",
+                toggleActions: "play none none reverse"
+            },});
+
+        timelineRicardLogo.to(".cé-ricardlogo", {
+
+            xPercent: 10,
+            rotation: 360,
+            duration: 4,
+            width: 300,
+            ease: "power1.inOut"
+        });
+        timelineRicardLogo.to(".cé-mains", {
+            opacity: 1,
+            duration: 1,
+        }, ">-0.5");
+        timelineRicardLogo.to(".cé-faisceau", {
+            opacity: 1,
+            duration: 1,
+        }, "<")
+        timelineRicardLogo.to(".cé-ricard-flow", {
+            opacity: 1,
+            duration: 0.5,
+        }, ">-0.5");
+        const canvas = document.getElementById("canvasricard");
+        const ctx = canvas.getContext("2d");
+        let position = { x: 0, y: 0 };
+        ctx.fillStyle = "#F2D44A";
+        function draw() {
+            // erase the canvas
+            ctx.clearRect(0, 0, 0, 0);
+            // redraw the square at it's new position
+            ctx.fillRect(position.x, position.y, 50, 50);
+            //ctx.beginPath();                 // clear current path
+            //ctx.arc(15, 15, 10, 0, 2 * Math.PI);   // apply arguments to arc() call
+            //ctx.fill();
+        }
+        timelineRicardLogo.to(position, {
+                x: 0,
+                y: 600,
+                duration: 6,
+                // unlike DOM elements, canvas needs to be redrawn and cleared on every tick
+                onUpdate: draw
             });
-        })*/
+        gsap.to(".cé-ricard-flow", {
+            attr: {
+                rx: 50
+            }
+        })
+        /*gsap.to(".parallax", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+            ease: "none"
+        });*/
+        /*gsap.to(".cé-lunettes", {
+            rotation: 90,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "backgroundQuestions",
+                scrub: 2
+            },
+            y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+            ease: "none"
+        });
+
+        gsap.to(".cé-calbut", {
+            rotation: -90,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "backgroundQuestions",
+                scrub: 2
+            }
+        });*/
         Draggable.create(".cé-drag-sausage-raw-1", {
             onDragEnd: function() {
                 gsap.to(".cé-drag-sausage-raw-1", {
@@ -150,21 +312,5 @@
                 });
             }
         });
-        let audioplay = new Audio('assets/images/klaxon.mp3')
-
-        function letsplay(){
-            audioplay.play()
-            setInterval(function() {
-                audioplay.play();
-            }, 3000);
-        }
-        let tl = gsap.timeline({defaults: {repeat: -1,repeatDelay: 5}})
-        tl.from(".cé-bagnole", {xPercent: 800,duration: 3})
-        tl.call(function(){
-            setInterval(function() {
-                audioplay.play();
-            }, 8000);
-        })
-
     </script>
 {% endblock %}
