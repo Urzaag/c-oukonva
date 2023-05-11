@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Righteous&display=swap');
+
+:root {
+    --cé-font-title: 'Anton', sans-serif;
+    --cé-font-text: 'Righteous', cursive;;
+    --cé-blue-dark: #223B74;
+    --cé-blue-light: #3358AD;
+    --cé-yellow-light: #F2D44A;
+    --cé-yellow-dark: #EBBF49;
+    --cé-white: white;
+}
