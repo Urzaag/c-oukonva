@@ -1,0 +1,64 @@
+.cé-headertitle {
+    position: absolute;
+    top: 30vh;
+    left: 30%;
+    color: var(--cé-yellow-dark);
+    font-family: var(--cé-font-title);
+    font-size: 6rem;
+    background-color: var(--cé-blue-light);
+    padding: 10px;
+    border-radius: 30%;
+}
+.cé-headercontainer img {
+    height: 250px;
+    max-width: 300px;
+    position: absolute;
+}
+
+.cé-headercontainer{
+    position: relative;
+    height: 85vh;
+    background-color: var(--cé-blue-light);
+}
+
+.cé-bigard {
+    left: 50%;
+    top: 59%;
+}
+.cé-patoche {
+    left: 23%;
+    transform: rotate(-20deg)
+}
+.cé-lagaf{
+    top: 49%;
+    left: 15%;
+}
+.cé-socks{
+    left: 5%;
+    top: 5%;
+    transform: rotate(15deg)
+}
+.cé-johnny{
+    left: 55%;
+}
+.cé-tshirt{
+    left: 35%;
+    transform: rotate(20deg);
+}
+.cé-casque{
+    top: 30%;
+    left: 70%;
+    transform: rotate(15deg);
+}
+.cé-bobricard{
+    left: 65%;
+}
+.cé-sacricard{
+    left: 30%;
+    top: 60%;
+    transform: rotate(-20deg);
+}
+.cé-picole{
+    left: 67%;
+    top: 60%;
+}
