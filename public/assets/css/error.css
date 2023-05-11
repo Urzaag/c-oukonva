@@ -1,0 +1,22 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--cé-blue-dark);
+
+}
+img {
+    height: 70vh;
+    margin-left: 20%;
+}
+h1 {
+    color: var(--cé-yellow-light);
+    font-family: var(--cé-font-title);
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0;
+}

@@ -13,6 +13,8 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
-    'map/sort' => ['HomeController', 'sort', ['question1', 'question2', 'question3', 'question4']],
+    'map/sort' => ['HomeController', 'sort'],
     'map' => ['MapController', 'index'],
+    'ilvaoùlui' => ['ErrorController', 'index'],
+    'argeles' => ['ArgelesController', 'argeles']
 ];

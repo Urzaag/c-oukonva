@@ -3,10 +3,12 @@
 {% block content %}
     <body>
     <div class="cé-navbar">
+        <img class="cé-place-apero" src="assets/images/place-apero.jpeg" alt="">
         <img class="cé-bagnole" src="assets/images/bagnole.png" alt="bagnole">
+        <img class="cé-rue-soif" src="assets/images/rue-soif.jpeg" alt="">
     </div>
     <div class="cé-headercontainer">
-        <img src="assets/images/bigard.png" alt="bigard" class="cé-bigard">
+        <img src="assets/images/bigard.png" alt="bigard" class="cé-bigard" id="bigard">
         <img src="assets/images/johnny.png" alt="johnny" class="cé-johnny">
         <img src="assets/images/patoche.png" alt="patoche" class="cé-patoche">
         <img src="assets/images/socks.webp" alt="socks" class="cé-socks">
@@ -26,53 +28,53 @@
     <div class="backgroundQuestions">
         <p>Nulla hendrerit accumsan odio, aliquet vulputate tellus maximus ac. Curabitur euismod finibus ullamcorper. Donec vel ex nec lacus semper gravida eget a quam. Praesent at ligula sit amet enim hendrerit varius. Aenean ac lacus nulla. Proin faucibus quis purus quis sagittis. Etiam eu elit ut risus dapibus consequat ac ac lacus. Nam efficitur eros non viverra laoreet. Vestibulum nec consectetur nisi, quis tincidunt eros. Aenean condimentum erat quis urna efficitur, ut fringilla neque volutpat. Suspendisse mauris dolor, porta eget nisi quis, tempor laoreet enim. Fusce nulla dolor, varius laoreet aliquet nec, maximus sit amet sem. Aliquam aliquet ex vitae gravida feugiat. Donec vitae elementum urna, vitae elementum sem. Vestibulum vulputate, diam euismod scelerisque scelerisque, tellus risus malesuada turpis, et aliquam ex leo eget mauris.</p>
         <h1>CéKOIKéMIEU ?</h1>
-        <form method="post" action="/map/sort">
+        <form method="post" action="map/sort">
             <div class="containerQuestionsGlobal">
         <div class="containerQuestions questions1">
             <div class="jonhyGlobal questionGlobal">
-                <input type="checkbox" class="checkbox" value="jonhy">
-                <label class="btn jonhy orange">Jonhy</label>
+                <input type="checkbox" class="checkbox" value="jonhy" name="question1" id="jonhy">
+                <label for="jonhy" class="btn jonhy orange">Johnny</label>
                 <img class="jonhyImage" src="/assets/images/cursorJonhy.png" alt="">
             </div>
             <div class="sardouGlobal questionGlobal">
-                <input type="checkbox" class="checkbox" value="sardou">
-                <label class="btn sardou jaune">Sardou</label>
+                <input type="checkbox" class="checkbox" value="sardou" name="question1" id="sardou">
+                <label for="sardou" class="btn sardou jaune" >Sardou</label>
                 <img class="sardouImage" src="/assets/images/cursorSardou.png" alt="">
             </div>
         </div>
                 <div class="containerQuestions questions1">
                     <div class="claquetteGlobal questionGlobal">
-                        <input type="checkbox" class="checkbox" value="claquette">
-                        <label class="btn claquette orange">Claquettes</label>
+                        <input type="checkbox" class="checkbox" value="claquette" name="question2" id="claquette">
+                        <label for="claquette" class="btn claquette orange">Claquettes</label>
                         <img class="claquetteImage" src="/assets/images/claquettes.png" alt="">
                     </div>
                     <div class="slipGlobal questionGlobal">
-                        <input type="checkbox" class="checkbox" value="slip">
-                        <label class="btn slip jaune">Slip</label>
+                        <input type="checkbox" class="checkbox" value="slip" name="question2" id="slip">
+                        <label for="slip" class="btn slip jaune">Slip</label>
                         <img class="slipImage" src="/assets/images/slip.png" alt="">
                     </div>
                 </div>
             <div class="containerQuestions questions1">
                         <div class="muletGlobal questionGlobal">
-                            <input type="checkbox" class="checkbox" value="mulet">
-                            <label class="btn mulet orange">Mulet</label>
+                            <input type="checkbox" class="checkbox" value="mulet" name="question3" id="mulet" >
+                            <label for="mulet" class="btn mulet orange">Mulet</label>
                             <img class="muletImage" src="/assets/images/mulet.png" alt="">
                         </div>
                         <div class="bobGlobal questionGlobal">
-                            <input type="checkbox" class="checkbox" value="bob">
-                            <label class="btn bob jaune">Bob</label>
+                            <input type="checkbox" class="checkbox" value="bob" name="question3" id="bob" >
+                            <label for="bob" class="btn bob jaune">Bob</label>
                             <img class="bobImage" src="/assets/images/bob.png" alt="">
                         </div>
             </div>
             <div class="containerQuestions questions1">
                             <div class="biereGlobal questionGlobal">
-                                <input type="checkbox" class="checkbox" value="biere">
-                                <label class="btn biere orange">Bière</label>
+                                <input type="checkbox" class="checkbox" value="biere" name="question4" id="biere" >
+                                <label for="biere" class="btn biere orange">Bière</label>
                                 <img class="biereImage" src="/assets/images/biere.png" alt="">
                             </div>
                             <div class="ricardGlobal questionGlobal">
-                                <input type="checkbox" class="checkbox" value="ricard">
-                                <label class="btn ricard jaune">Ricard</label>
+                                <input type="checkbox" class="checkbox" value="ricard" name="question4" id="ricard">
+                                <label for="ricard" class="btn ricard jaune">Ricard</label>
                                 <img class="ricardImage" src="/assets/images/ricard.png" alt="">
                             </div>
                         </div>
@@ -164,5 +166,20 @@
                 audioplay.play();
             }, 8000);
         })
+
+        // Fonction pour jouer le son
+        function jouerSon() {
+            let audio = new Audio('/assets/images/bigard.mp3');
+            audio.play();
+        }
+
+        // Récupérer l'élément de l'image
+        var image = document.querySelector('#bigard');
+
+        // Ajouter un gestionnaire d'événements au clic sur l'image
+        image.addEventListener('click', function() {
+            jouerSon();
+        });
+
     </script>
 {% endblock %}
