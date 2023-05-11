@@ -12,7 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 body {
-
+    background: var(--cé-blue-dark);
 }
 
 .cé-navbar{
@@ -177,4 +177,8 @@ body {
 .cé-drag-sausage-raw-3 {
     rotate: 10deg;
     margin-top: -120%;
+}
+
+.cé-flammes {
+    display: flex;
 }
