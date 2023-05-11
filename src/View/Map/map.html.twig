@@ -9,6 +9,7 @@
     <div class="cé-map">
         <div>
             <h1>CéLAKONVA !</h1>
+            <!--
             <div class="card célacard célacard1 mb-3" id="célacard1">
                 <img class="m-3" src="/assets/images/campingnord.png" class="card-img-top" alt="camping card sous la neige">
                 <div class="card-body">
@@ -37,6 +38,7 @@
                     <p class="card-text">A NE PAS LOUPER ! Le sosie officiel de Johnny sera présent pour un concert exclusif.</p>
                 </div>
             </div>
+            -->
             <div class="card célacard célacard5 mb-3" id="célacard5">
                 <img class="m-3" src="/assets/images/misscamping.png" class="card-img-top" alt="photo de miss camping">
                 <div class="card-body">
@@ -65,8 +67,8 @@
         const card4 = document.querySelector('.célacard4');
         const card5 = document.querySelector('.célacard5');
         let isVisible = false;
-        pin1.addEventListener('click', () => {
-            card1.classList.toggle('is-visible');
+        pin1.addEventListener('mouseover', () => {
+            card1.target.style.display = "unset";
         });
         pin2.addEventListener('click', () => {
             card2.classList.toggle('is-visible');
