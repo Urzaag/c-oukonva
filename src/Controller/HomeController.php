@@ -22,7 +22,6 @@ class HomeController extends AbstractController
             $itemManager = new ItemManager();
             $result = $itemManager->sort($question1, $question2, $question3, $question4);
             return $result;
-
         }
     }
 }
