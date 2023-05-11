@@ -5,9 +5,13 @@ body {
 .cé-map {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     cursor: url('/assets/images/campingcarcursor.png'), pointer;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
+
 
 .cé-map h1 {
     font-family: var(--cé-font-title);
@@ -25,7 +29,7 @@ body {
     padding-bottom: 1rem;
 }
 
-.cé-map p {
+.cé-map p, .cé-map h6 {
     font-family: var(--cé-font-text);
     text-align: center;
 }
@@ -89,7 +93,7 @@ body {
 }
 
 .célacard {
-    width: 25rem;
+    width: 35rem;
     background: var(--cé-yellow-dark);
     font-family: var(--cé-font-text);
 }
@@ -97,20 +101,26 @@ body {
 /* Card 1 couple */
 .célacard1 {
     position: relative;
-    height: 20rem;
+    height: 30rem;
 }
 
 .célacard1 .card-body h5 {
     width: 25rem;
     position: absolute;
-    left: 0rem;
+    left: 10rem;
 }
 
 .célacard1 .card-body p {
     width: 10rem;
     position: absolute;
     top: 7rem;
-    left: 14rem;
+    left: 20rem;
+}
+.célacard1 .card-body h6 {
+    width: 10rem;
+    position: absolute;
+    top: 15rem;
+    left: 20rem;
 }
 
 .célacard1 img {
@@ -123,7 +133,7 @@ body {
 /* Card 2 barbecue */
 .célacard2 {
     position: relative;
-    height: 20rem;
+    height: 30rem;
 }
 
 .célacard2 .card-body {
@@ -142,7 +152,7 @@ body {
 /* Card 3 peche à la truite */
 .célacard3 {
     position: relative;
-    height: 20rem;
+    height: 30rem;
 }
 
 .célacard3 .card-body h5 {
@@ -154,8 +164,14 @@ body {
 .célacard3 .card-body p {
     width: 12rem;
     position: absolute;
-    left: 12rem;
-    top: 4rem;
+    left: 15rem;
+    top: 6rem;
+}
+.célacard3 .card-body h6 {
+    width: 12rem;
+    position: absolute;
+    left: 15rem;
+    top: 15rem;
 }
 
 .célacard3 img {
@@ -168,13 +184,30 @@ body {
 /* Card 4 sosie */
 .célacard4 {
     position: relative;
-    height: 20rem;
+    height: 30rem;
 }
 
 .célacard4 .card-body{
     width: 15rem;
     position: absolute;
     left: 10rem;
+}
+.célacard4 .card-body h5{
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
+}
+.célacard4 .card-body h6{
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
+    top: 14rem;
+}
+.célacard4 .card-body p{
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
 }
 
 .célacard4 img {
@@ -186,7 +219,7 @@ body {
 /* Card 5 miss camping */
 .célacard5 {
     position: relative;
-    height: 20rem;
+    height: 30rem;
 }
 
 .célacard5 .card-body{

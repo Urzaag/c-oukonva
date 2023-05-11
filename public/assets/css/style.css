@@ -35,7 +35,7 @@ body {
     width: 80vh;
     color: var(--cé-yellow-light);
     text-align: justify;
-    padding-top: 10vh;
+    padding-top: 4vh;
 }
 .questionGlobal {
     display: flex;
