@@ -6,7 +6,6 @@ body {
     color: #f76c6c;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +41,7 @@ body {
     z-index: 3;
 }
 .jonhyGlobal:hover .jonhyImage{
-    visibility: hidden;
+    visibility: unset;
 }
 .sardouGlobal:hover .sardouImage{
     visibility: unset;
@@ -96,7 +95,6 @@ body {
 .checkbox{
     position: absolute;
     width: 90%;
-    z-index: 5;
 }
 .containerQuestions .btn {
     position: relative;
