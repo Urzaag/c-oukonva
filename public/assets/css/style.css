@@ -1,13 +1,17 @@
-@import "variables.css";
+@import url(variables.css);
+@import url(header.css);
+@import "map.css";
+
+body {
+    color: #f76c6c;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--cé-font-text);
-}
-body {
-    color: white;
 }
 
 .backgroundQuestions h1{
@@ -60,6 +64,10 @@ body {
 }
 .biereGlobal:hover .biereImage{
     visibility: unset;
+}
+
+.cé-navbar{
+    height: 15vh;
 }
 .backgroundQuestions{
     background: linear-gradient(to bottom, #3358AD , #223B74); /*fiolet*/
@@ -301,4 +309,37 @@ body {
     }
 }
 
+.cé-tray {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../images/empty-food-tray.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1vw 0 0 1vw;
+}
 
+.cé-drag-sausage-raw {
+    width: auto;
+}
+
+.cé-drag-sausage-raw-1 {
+    rotate: 180deg;
+    margin-top: -35%;
+}
+
+.cé-drag-sausage-raw-2 {
+    rotate: 0deg;
+    margin-top: -60%;
+}
+
+.cé-drag-sausage-raw-3 {
+    rotate: 10deg;
+    margin-top: -120%;
+}
+
+.cé-flammes {
+    display: flex;
+}
