@@ -13,6 +13,7 @@ class HomeController extends AbstractController
     {
         return $this->twig->render('Home/index.html.twig');
     }
+
     public function sort($question1, $question2, $question3, $question4)
     {
         $question1 = $question2 = $question3 = $question4 = "";
