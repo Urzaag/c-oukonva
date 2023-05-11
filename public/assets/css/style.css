@@ -1,3 +1,346 @@
+@import url(variables.css);
+@import url(header.css);
+@import "map.css";
+
 body {
     color: #f76c6c;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--cé-font-text);
+}
+
+.backgroundQuestions h1{
+    font-family: var(--cé-font-title);
+    color: var(--cé-yellow-dark);
+    font-size: 6rem;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    letter-spacing: 1px;
+}
+.backgroundQuestions p{
+    width: 80vh;
+    color: var(--cé-yellow-light);
+    text-align: justify;
+    padding-top: 10vh;
+}
+.questionGlobal {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jonhyImage, .sardouImage, .claquetteImage, .slipImage, .muletImage, .bobImage, .ricardImage, .biereImage{
+    visibility: hidden;
+    height: 20vh;
+    position: absolute;
+    z-index: 3;
+}
+.jonhyGlobal:hover .jonhyImage{
+    visibility: unset;
+}
+.sardouGlobal:hover .sardouImage{
+    visibility: unset;
+}
+.claquetteGlobal:hover .claquetteImage{
+    visibility: unset;
+}
+.slipGlobal:hover .slipImage{
+    visibility: unset;
+}
+.muletGlobal:hover .muletImage{
+    visibility: unset;
+}
+.bobGlobal:hover .bobImage{
+    visibility: unset;
+}
+.ricardGlobal:hover .ricardImage{
+    visibility: unset;
+}
+.biereGlobal:hover .biereImage{
+    visibility: unset;
+}
+
+.cé-navbar{
+    height: 15vh;
+}
+.backgroundQuestions{
+    background: linear-gradient(to bottom, #3358AD , #223B74); /*fiolet*/
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+.questions1{
+    margin-bottom: 5vh;
+}
+.containerQuestionsGlobal {
+    width: 80vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.containerQuestions{
+    display: flex;
+}
+.checkbox{
+    position: absolute;
+    width: 90%;
+}
+.containerQuestions .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 5vh 1vw 5vw 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerQuestions label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.containerQuestions .btn:hover a {
+    letter-spacing: 3px;
+}
+.containerQuestions .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+}
+.containerQuestions .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+}
+.orange::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #C27034;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+.orange::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #C27034;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+.orange::before, /*chnage 1*/
+.orange::after {
+    background: #C27034;
+    box-shadow: 0 0 5px #C27034, 0 0 15px #C27034, 0 0 30px #C27034,
+    0 0 60px #C27034;
+}
+.jaune::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #F2D44A;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+.jaune::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #F2D44A;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+.jaune::before, /*chnage 1*/
+.jaune::after {
+    background: #F2D44A;
+    box-shadow: 0 0 5px #F2D44A, 0 0 15px #F2D44A, 0 0 30px #F2D44A,
+    0 0 60px #F2D44A;
+}
+.containerQuestions .btn:hover::before /*lightup button*/ {
+    bottom: 0;
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+}
+.containerQuestions .btn:hover::after /*lightup button*/ {
+    top: 0;
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+}
+.submit{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 12px 30px #99D9EA, 0 -12px 30px #99D9EA, 0 4px 6px #99D9EA, 0px 12px 13px #99D9EA, 0px -3px 5px #99D9EA;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400px;
+    backdrop-filter: blur(15px);
+    width: 250px;
+    height: 50px;
+    margin-top: 5vh;
+}
+
+.wobble-hor-bottom:hover {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+.cé-tray {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../images/empty-food-tray.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1vw 0 0 1vw;
+}
+
+.cé-drag-sausage-raw {
+    width: auto;
+}
+
+.cé-drag-sausage-raw-1 {
+    rotate: 180deg;
+    margin-top: 5%;
+}
+
+.cé-drag-sausage-raw-2 {
+    rotate: 0deg;
+}
+
+.cé-drag-sausage-raw-3 {
+    rotate: 10deg;
+    margin-top: -40%;
+}
+
+.cé-flammes {
+    display: flex;
+    margin-top: -15%;
+    bottom: -10px;
 }
