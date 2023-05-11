@@ -17,8 +17,60 @@ body {
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
+.cé-pin1 {
+    width: 2rem;
+    position: absolute;
+    right: 595px;
+    top: 20px;
+}
+
+.cé-pin2 {
+    width: 2rem;
+    position: absolute;
+    bottom: 180px;
+    right: 768px;
+}
+
+.cé-pin3 {
+    width: 2rem;
+    position: absolute;
+    bottom: 92px;
+    right: 650px;
+}
+
+.cé-pin4 {
+    width: 2rem;
+    position: absolute;
+    bottom: 140px;
+    right: 480px;
+}
+
+.cé-pin5 {
+    width: 2rem;
+    position: absolute;
+    bottom: 142px;
+    right: 300px;
+}
+
+.célacard {
+    width: 20rem;
+    background: var(--cé-yellow-dark);
+    font-family: var(--cé-font-text);
+}
+
+.célacard img {
+    width: 18rem;
+}
+
+.célacard1.is-visible, .célacard2.is-visible, .célacard3.is-visible, .célacard4.is-visible, .célacard5.is-visible {
+    display: initial;
+}
+
+.célacard1, .célacard2, .célacard3, .célacard4, .célacard5 {
+    display: none;
+}
+
 .cé-pin {
     width: 5rem;
 }
-
-
