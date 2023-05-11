@@ -108,7 +108,7 @@ body {
     align-items: center;
 }
 .containerQuestions label {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -129,12 +129,12 @@ body {
     font-weight: 400px;
     z-index: 1;
     transition: 0.5s;
-    backdrop-filter: blur(15px);
+    /*backdrop-filter: blur(15px);*/
 }
 .containerQuestions .btn:hover label {
     letter-spacing: 3px;
 }
-.containerQuestions .btn a::before {
+/*.containerQuestions .btn a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -148,7 +148,7 @@ body {
 }
 .containerQuestions .btn:hover a::before {
     transform: skewX(45deg) translate(200px);
-}
+}*/
 .orange::before {
     content: "";
     position: absolute;
