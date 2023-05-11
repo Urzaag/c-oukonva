@@ -1,11 +1,13 @@
 body {
-    background: var(--cé-blue-dark);
+    background: linear-gradient(to bottom, #3358AD , #223B74); /*fiolet*/
 }
 
 .cé-map {
     display: flex;
+    justify-content: center;
     justify-content: space-between;
-    height: 95vh;
+    height: 100vh;
+    cursor: url('/assets/images/campingcarcursor.png'), pointer;
     margin-left: 5vh;
     margin-right: 5vh;
 }
@@ -42,6 +44,7 @@ body {
 
 /* Position camping nord */
 .cé-pin1 {
+    display: none;
     width: 2rem;
     position: absolute;
     right: 30%;
@@ -51,6 +54,7 @@ body {
 
 /* Position camping océan */
 .cé-pin2 {
+    display: none;
     width: 2rem;
     position: absolute;
     bottom: 180px;
@@ -60,6 +64,7 @@ body {
 
 /* Position camping Pyrénées */
 .cé-pin3 {
+    display: none;
     width: 2rem;
     position: absolute;
     bottom: 92px;
@@ -69,6 +74,7 @@ body {
 
 /* Position camping Montpellier*/
 .cé-pin4 {
+    display: none;
     width: 2rem;
     position: absolute;
     bottom: 140px;
@@ -78,6 +84,7 @@ body {
 
 /* Position camping Nice */
 .cé-pin5 {
+    display: none;
     width: 2rem;
     position: absolute;
     bottom: 142px;
@@ -232,3 +239,6 @@ body {
     display: none;
 }
 
+.display {
+    display: flex;
+}

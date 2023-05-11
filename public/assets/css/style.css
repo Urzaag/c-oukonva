@@ -4,14 +4,22 @@
 
 body {
     color: #f76c6c;
+    background: linear-gradient(to bottom, #3358AD , #223B74); /*fiolet*/
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--cé-font-text);
+}
+
+.accueuil{
+    cursor: url('/assets/images/ricard.png'), pointer;
+
+}
+
+.btn:hover, .submit:hover {
     cursor: url('/assets/images/ricard.png'), pointer;
 }
 
@@ -42,8 +50,12 @@ body {
     position: absolute;
     z-index: 3;
 }
+
+.bobImage, .slipImage{
+    height: 15vh;
+}
 .jonhyGlobal:hover .jonhyImage{
-    visibility: hidden;
+    visibility: unset;
 }
 .sardouGlobal:hover .sardouImage{
     visibility: unset;
@@ -71,7 +83,6 @@ body {
     height: 15vh;
 }
 .backgroundQuestions{
-    background: linear-gradient(to bottom, #3358AD , #223B74); /*fiolet*/
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -95,9 +106,9 @@ body {
     display: flex;
 }
 .checkbox{
+    visibility: hidden;
     position: absolute;
     width: 90%;
-    z-index: 5;
 }
 .containerQuestions .btn {
     position: relative;
@@ -111,7 +122,7 @@ body {
     align-items: center;
 }
 .containerQuestions label {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -132,12 +143,12 @@ body {
     font-weight: 400px;
     z-index: 1;
     transition: 0.5s;
-    backdrop-filter: blur(15px);
+    /*backdrop-filter: blur(15px);*/
 }
 .containerQuestions .btn:hover label {
     letter-spacing: 3px;
 }
-.containerQuestions .btn a::before {
+/*.containerQuestions .btn a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -151,7 +162,7 @@ body {
 }
 .containerQuestions .btn:hover a::before {
     transform: skewX(45deg) translate(200px);
-}
+}*/
 .orange::before {
     content: "";
     position: absolute;
