@@ -103,7 +103,7 @@ body {
     left: 0;
     width: 250px;
     height: 50px;
-    margin: 5vh 1vw 1vw auto;
+    margin: 5vh 1vw 5vw 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,5 +344,3 @@ body {
     margin-top: -15%;
     bottom: -10px;
 }
-
-
