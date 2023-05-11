@@ -154,7 +154,6 @@ class MapController extends AbstractController
             'temp3'=>$temp3, 'phrase3'=>$phrase3,
             'temp4'=>$temp4, 'phrase4'=>$phrase4,
             'temp5'=>$temp5, 'phrase5'=>$phrase5
-
         ]);
     }
 }
