@@ -15,4 +15,5 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'map/sort' => ['HomeController', 'sort', ['question1', 'question2', 'question3', 'question4']],
     'map' => ['MapController', 'index'],
+    'ilvaoùlui' => ['ErrorController', 'index']
 ];
