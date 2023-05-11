@@ -72,12 +72,12 @@
                 audioplay.play();
             }, 3000);
         }
-        let tl = gsap.timeline({defaults: {delay:2,repeat: -1,repeatDelay: 5}})
+        let tl = gsap.timeline({defaults: {repeat: -1,repeatDelay: 5}})
         tl.from(".cé-bagnole", {xPercent: 800,duration: 3})
         tl.call(function(){
             setInterval(function() {
                 audioplay.play();
-            }, 2000);
+            }, 8000);
         })
 
 
