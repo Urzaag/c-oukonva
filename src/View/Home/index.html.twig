@@ -6,7 +6,7 @@
         <img class="cé-bagnole" src="assets/images/bagnole.png" alt="bagnole">
     </div>
     <div class="cé-headercontainer">
-        <img src="assets/images/bigard.png" alt="bigard" class="cé-bigard">
+        <img src="assets/images/bigard.png" alt="bigard" class="cé-bigard" id="bigard">
         <img src="assets/images/johnny.png" alt="johnny" class="cé-johnny">
         <img src="assets/images/patoche.png" alt="patoche" class="cé-patoche">
         <img src="assets/images/socks.webp" alt="socks" class="cé-socks">
@@ -164,5 +164,20 @@
                 audioplay.play();
             }, 8000);
         })
+
+        // Fonction pour jouer le son
+        function jouerSon() {
+            let audio = new Audio('/assets/images/bigard.mp3');
+            audio.play();
+        }
+
+        // Récupérer l'élément de l'image
+        var image = document.querySelector('#bigard');
+
+        // Ajouter un gestionnaire d'événements au clic sur l'image
+        image.addEventListener('click', function() {
+            jouerSon();
+        });
+
     </script>
 {% endblock %}
