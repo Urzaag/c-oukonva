@@ -147,3 +147,34 @@ body {
     box-shadow: 0 0 5px #EBBF49, 0 0 15px #EBBF49, 0 0 30px #EBBF49,
     0 0 60px #EBBF49;
 }
+
+.cé-tray {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../images/empty-food-tray.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1vw 0 0 1vw;
+}
+
+.cé-drag-sausage-raw {
+    width: auto;
+}
+
+.cé-drag-sausage-raw-1 {
+    rotate: 180deg;
+    margin-top: -35%;
+}
+
+.cé-drag-sausage-raw-2 {
+    rotate: 0deg;
+    margin-top: -60%;
+}
+
+.cé-drag-sausage-raw-3 {
+    rotate: 10deg;
+    margin-top: -120%;
+}
