@@ -11,7 +11,7 @@ class ArgelesController extends AbstractController
     {
         //$curl = curl_init('https://api.openweathermap.org/data/2.5/weather?lat=-22.908333&lon=-43.196388&appid=97d64e56f970ab375005e4db20903178');
 
-            $client = HttpClient::create();
+        $client = HttpClient::create();
         $response = $client->request(
             'GET',
             'https://api.openweathermap.org/data/2.5/weather?lat=-42.546214&lon=3.022911&appid=97d64e56f970ab375005e4db20903178&units=metric&lang=fr'
