@@ -6,7 +6,7 @@ use PDO;
 
 class ItemManager extends AbstractManager
 {
-    public const TABLE = 'item';
+    public const TABLE = 'camping';
 
     /**
      * Insert new item in database
@@ -30,5 +30,10 @@ class ItemManager extends AbstractManager
         $statement->bindValue('title', $item['title'], PDO::PARAM_STR);
 
         return $statement->execute();
+    }
+    public function sort($question1, $question2, $question3, $question4): array
+    {
+            $query = "SELECT * FROM camping WHERE question1 like '$question1' AND question2 like '$question2' AND question3 like '$question3' AND question4 like '$question4'";
+            return $this->pdo->query($query)->fetchAll();
     }
 }
