@@ -19,21 +19,21 @@ class HomeController extends AbstractController
         $question1 = $question2 = $question3 = $question4 = "";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            if (isset($_POST['question1'])){
+            if (isset($_POST['question1'])) {
                 $question1 = $_POST['question1'];
             } else {
                 $question1 = 'jonhy';
             }
 
-            if (isset($_POST['question2'])){
+            if (isset($_POST['question2'])) {
                 $question2 = $_POST['question2'];
-            } elseif ($question1 = 'jonhy'){
+            } elseif ($question1 = 'jonhy') {
                 $question2 = 'slip';
             } else {
                 $question2 = 'claquette';
             }
 
-            if (isset($_POST['question3'])){
+            if (isset($_POST['question3'])) {
                 $question3 = $_POST['question3'];
             } elseif ($question1 = 'jonhy') {
                 $question3 = 'mulet';
@@ -42,7 +42,7 @@ class HomeController extends AbstractController
                 $question3 = 'bob';
             }
 
-            if (isset($_POST['question4'])){
+            if (isset($_POST['question4'])) {
                 $question4 = $_POST['question4'];
             } elseif ($question1 = 'jonhy') {
                 $question4 = 'ricard';
@@ -54,32 +54,33 @@ class HomeController extends AbstractController
 
             $itemManager = new ItemManager();
             $result = $itemManager->sort($question1, $question2, $question3, $question4);
-            if (empty($result)){
-                $result = ['id' => 5];
-            }
 
-            foreach ($result as $camping){
-                $campingID[] = $camping['id'];
-            }
+            if (count($result) > 1) {
+                foreach ($result as $camping) {
+                    $campingID[] = $camping['id'];
+                }
+            } else {
+                    $campingID[] = 5;
+                }
 
             $display1 = $display2 = $display3 = $display4 = $display5 = "";
 
-            if (in_array('1', $campingID)){
+            if (in_array('1', $campingID)) {
                 $display1 = 'display';
             }
-            if (in_array('2', $campingID)){
+            if (in_array('2', $campingID)) {
                 $display2 = 'display';
             }
-            if (in_array('3', $campingID)){
+            if (in_array('3', $campingID)) {
                 $display3 = 'display';
             }
-            if (in_array('4', $campingID)){
+            if (in_array('4', $campingID)) {
                 $display4 = 'display';
             }
-            if (in_array('5', $campingID)){
+            if (in_array('5', $campingID)) {
                 $display5 = 'display';
             }
-            return $this->twig->render('Map/map.html.twig', ['result' => $result, 'display1' => $display1, 'display2' => $display2, 'display3' => $display3, 'display4' => $display4, 'display5' => $display5]);
+            return $this->twig->render('Map/map.html.twig', ['result' => $result, 'displayPin1' => $display1, 'displayPin2' => $display2, 'displayPin3' => $display3, 'displayPin4' => $display4, 'displayPin5' => $display5]);
         }
     }
 }
