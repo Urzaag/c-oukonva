@@ -1,3 +1,10 @@
+.cé-bagnole{
+    height: 100%;
+    animation-direction: reverse;
+    animation-duration: 5s;
+}
+
+
 .cé-headertitle {
     position: absolute;
     top: 30vh;
