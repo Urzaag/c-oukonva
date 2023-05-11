@@ -1,9 +1,17 @@
+.cé-navbar{
+    display: flex;
+}
 .cé-bagnole{
-
     height: 100%;
 }
-.cé-navbar{
-
+.cé-place-apero {
+    height: 100%;
+}
+.cé-rue-soif {
+    height: 100%;
+    justify-content: flex-end;
+    margin-left: 62%;
+    z-index: 6;
 }
 
 

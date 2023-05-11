@@ -14,14 +14,17 @@ class HomeController extends AbstractController
         return $this->twig->render('Home/index.html.twig');
     }
 
-    public function sort($question1, $question2, $question3, $question4)
+    public function sort()
     {
         $question1 = $question2 = $question3 = $question4 = "";
-        if ($_SERVER['REQUEST_METHOD'] === 'post') {
-            $question1 = $_POST[''];
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $question1 = $_POST['question1'];
+            $question2 = $_POST['question2'];
+            $question3 = $_POST['question3'];
+            $question4 = $_POST['question4'];
             $itemManager = new ItemManager();
             $result = $itemManager->sort($question1, $question2, $question3, $question4);
-            return $result;
+            return $this->twig->render('Map/map.html.twig', ['result' => $result]);
         }
     }
 }

@@ -12,6 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--cé-font-text);
+    cursor: url('/assets/images/ricard.png'), pointer;
 }
 
 .backgroundQuestions h1{
@@ -43,7 +44,7 @@ body {
     z-index: 3;
 }
 .jonhyGlobal:hover .jonhyImage{
-    visibility: unset;
+    visibility: hidden;
 }
 .sardouGlobal:hover .sardouImage{
     visibility: unset;
@@ -97,6 +98,7 @@ body {
 .checkbox{
     position: absolute;
     width: 90%;
+    z-index: 5;
 }
 .containerQuestions .btn {
     position: relative;
@@ -104,7 +106,7 @@ body {
     left: 0;
     width: 250px;
     height: 50px;
-    margin: 5vh 1vw 1vw auto;
+    margin: 3vh 1vw 3vw 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +135,7 @@ body {
     transition: 0.5s;
     backdrop-filter: blur(15px);
 }
-.containerQuestions .btn:hover a {
+.containerQuestions .btn:hover label {
     letter-spacing: 3px;
 }
 .containerQuestions .btn a::before {
@@ -242,7 +244,8 @@ body {
     backdrop-filter: blur(15px);
     width: 250px;
     height: 50px;
-    margin-top: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 20vh;
 }
 
 .wobble-hor-bottom:hover {
@@ -340,6 +343,46 @@ canvas {
     top: 147%;
 }
 
+.cé-pétanque * {
+    position: absolute;
+}
+
+.cé-pétanque-terrain {
+    rotate: 90deg;
+    right: 0;
+    top: 126%;
+    height: 200px;
+    width: 400px;
+}
+
+.cé-pétanque-cochonnet {
+    width: 25px;
+    right: 13%;
+    top: 115%;
+}
+
+.cé-pétanque-boule {
+    width: 100px;
+}
+
+.cé-pétanque-boule-1 {
+    right: 10%;
+    width: 50px;
+    top: 120%;
+}
+
+.cé-pétanque-boule-2 {
+    right: 15%;
+    width: 50px;
+    top: 130%;
+}
+
+.cé-pétanque-boule-3 {
+    right: 12%;
+    top: 173%;
+    width: 50px;
+}
+
 .cé-tray {
     width: 220px;
     height: 150px;
@@ -350,11 +393,20 @@ canvas {
     flex-direction: column;
     flex-wrap: nowrap;
     right: 12%;
-    bottom: -145%;
+    bottom: -155%;
+}
+
+.cé-alu {
+    position: absolute;
+    width: 200px;
+    right: 13%;
+    rotate: 50deg;
+    bottom: -160%;
 }
 
 .cé-drag-sausage-raw {
     width: auto;
+    cursor: url(/assets/images/pinces.png), pointer !important;
 }
 
 .cé-drag-sausage-raw-1 {
@@ -382,4 +434,7 @@ canvas {
     display: flex;
 }
 
-
+.cé-h1camping {
+    text-align: center;
+    margin: 30px;
+}
