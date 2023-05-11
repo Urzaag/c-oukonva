@@ -166,19 +166,20 @@ body {
 
 .cé-drag-sausage-raw-1 {
     rotate: 180deg;
-    margin-top: -35%;
+    margin-top: 5%;
 }
 
 .cé-drag-sausage-raw-2 {
     rotate: 0deg;
-    margin-top: -60%;
 }
 
 .cé-drag-sausage-raw-3 {
     rotate: 10deg;
-    margin-top: -120%;
+    margin-top: -40%;
 }
 
 .cé-flammes {
     display: flex;
+    margin-top: -15%;
+    bottom: -10px;
 }

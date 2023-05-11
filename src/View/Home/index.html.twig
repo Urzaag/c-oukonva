@@ -63,6 +63,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script>
-
+        let tray = document.querySelector(".cé-tray");
+        gsap.utils.toArray(tray).forEach(tray => {
+            let saucisse = tray.querySelector(".cé-drag-sausage-raw");
+            Draggable.create(saucisse, {
+                onDragEnd: function() {
+                    gsap.to(saucisse, {
+                        rotation: 360,
+                        repeat: 4,
+                        ease: 'none'
+                    });
+                }
+            });
+        })
+        Draggable.create(".cé-drag-sausage-raw-1", {
+            onDragEnd: function() {
+                gsap.to(".cé-drag-sausage-raw-1", {
+                    rotation: 360,
+                    repeat: 2,
+                    ease: 'none',
+                    duration: 2,
+                    onComplete: function() {
+                        document.querySelector(".cé-drag-sausage-raw-3").src="assets/images/saucissecuite.png"
+                    }
+                });
+            }
+        });
+        Draggable.create(".cé-drag-sausage-raw-2", {
+            onDragEnd: function() {
+                gsap.to(".cé-drag-sausage-raw-2", {
+                    rotation: 360,
+                    repeat: 2,
+                    ease: 'none',
+                    duration: 2,
+                    onComplete: function() {
+                        document.querySelector(".cé-drag-sausage-raw-3").src="assets/images/saucissecuite.png"
+                    }
+                });
+            }
+        });
+        Draggable.create(".cé-drag-sausage-raw-3", {
+            onDragEnd: function() {
+                gsap.to(".cé-drag-sausage-raw-3", {
+                    rotation: 360,
+                    repeat: 2,
+                    ease: 'none',
+                    duration: 2,
+                    onComplete: function() {
+                        document.querySelector(".cé-drag-sausage-raw-3").src="assets/images/saucissecuite.png"
+                    }
+                });
+            }
+        });
     </script>
 {% endblock %}
