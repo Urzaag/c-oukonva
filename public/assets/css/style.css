@@ -325,6 +325,78 @@ body {
     }
 }
 
+.cé-img-para * {
+    position: absolute;
+    width: 100px;
+}
+
+.cé-ricardlogo {
+    left: 0;
+    top: 102%;
+    width: 10px;
+}
+
+.cé-faisceau {
+    opacity: 0;
+    left: -1%;
+    top: 95%;
+    width: 400px;
+}
+
+.cé-mains {
+    opacity: 0;
+    left: 6%;
+    top: 135%;
+    width: 200px;
+    z-index: 2;
+}
+
+canvas {
+    left: 10%;
+    top: 147%;
+    border-radius: 20px;
+}
+
+.cé-pétanque * {
+    position: absolute;
+}
+
+.cé-pétanque-terrain {
+    rotate: 90deg;
+    right: 0;
+    top: 126%;
+    height: 200px;
+    width: 400px;
+}
+
+.cé-pétanque-cochonnet {
+    width: 25px;
+    right: 13%;
+    top: 115%;
+}
+
+.cé-pétanque-boule {
+    width: 100px;
+}
+
+.cé-pétanque-boule-1 {
+    right: 10%;
+    width: 50px;
+    top: 120%;
+}
+
+.cé-pétanque-boule-2 {
+    right: 15%;
+    width: 50px;
+    top: 130%;
+}
+
+.cé-pétanque-boule-3 {
+    right: 12%;
+    top: 173%;
+    width: 50px;
+}
+
 .cé-tray {
     width: 220px;
     height: 150px;
@@ -334,11 +406,21 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 1vw 0 0 1vw;
+    right: 12%;
+    bottom: -155%;
+}
+
+.cé-alu {
+    position: absolute;
+    width: 200px;
+    right: 13%;
+    rotate: 50deg;
+    bottom: -160%;
 }
 
 .cé-drag-sausage-raw {
     width: auto;
+    cursor: url(/assets/images/pinces.png), pointer !important;
 }
 
 .cé-drag-sausage-raw-1 {
@@ -355,10 +437,15 @@ body {
     margin-top: -40%;
 }
 
+.cé-ricard-plein {
+    position: absolute;
+    width: 150px;
+    left: 8.5%;
+    bottom: -182%;
+}
+
 .cé-flammes {
     display: flex;
-    margin-top: -15%;
-    bottom: -10px;
 }
 
 .cé-h1camping {
