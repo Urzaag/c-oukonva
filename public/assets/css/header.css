@@ -2,7 +2,8 @@
     display: flex;
 }
 .cé-bagnole{
-    height: 100%;
+    padding-top: 2vh;
+    height:60%;
 }
 .cé-place-apero {
     height: 100%;
@@ -14,7 +15,6 @@
     z-index: 6;
 }
 
-
 .cé-headertitle {
     position: absolute;
     top: 30vh;
@@ -22,7 +22,6 @@
     color: var(--cé-yellow-dark);
     font-family: var(--cé-font-title);
     font-size: 6rem;
-    background-color: var(--cé-blue-light);
     padding: 10px;
     border-radius: 30%;
 }
