@@ -2,7 +2,7 @@
     display: flex;
 }
 .cé-bagnole{
-    padding-top: 2vh;
+    align-self: center;
     height:60%;
 }
 .cé-place-apero {
@@ -17,11 +17,11 @@
 
 .cé-headertitle {
     position: absolute;
-    top: 30vh;
-    left: 30%;
+    top: 25vh;
+    left: 33%;
     color: var(--cé-yellow-dark);
     font-family: var(--cé-font-title);
-    font-size: 6rem;
+    font-size: 5.5rem;
     padding: 10px;
     border-radius: 30%;
 }
@@ -37,9 +37,12 @@
 }
 
 .cé-bigard {
-    left: 50%;
-    top: 59%;
+    left: 10%;
+    top: 20%;
+    z-index: 8;
 }
+
+/*
 .cé-patoche {
     left: 23%;
     transform: rotate(-20deg)
@@ -77,3 +80,4 @@
     left: 67%;
     top: 60%;
 }
+*/

@@ -14,9 +14,28 @@ body {
     font-family: var(--cé-font-text);
 }
 
+.cé-loader-div {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cé-blue-light);
+    z-index: 30;
+}
+.cé-loader-img{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
 .accueuil{
     cursor: url('/assets/images/ricard.png'), pointer;
 
+}
+
+#cé-home-background{
+    width: 100vw;
+    max-width: 100vw;
+    height: 85vh;
 }
 
 .btn:hover, .submit:hover {
