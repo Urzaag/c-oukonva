@@ -346,11 +346,13 @@ body {
     left: 6%;
     top: 135%;
     width: 200px;
+    z-index: 2;
 }
 
 canvas {
     left: 10%;
     top: 147%;
+    border-radius: 20px;
 }
 
 .cé-pétanque * {
