@@ -19,7 +19,7 @@
         <img src="/assets/images/bobricard.webp" alt="bob" class="cé-bobricard">
         <img src="/assets/images/sacricard.webp" alt="sac" class="cé-sacricard">
         <img src="/assets/images/picole.webp" alt="picole" class="cé-picole">
-        <h1 class="cé-headertitle">CÉOUKONVA ??</h1>
+        <h1 class="cé-headertitle">CéOUKONVA ??</h1>
     </div>
 
     <div class="backgroundQuestions">
@@ -322,14 +322,15 @@
             }, 8000);
         })
 
-        let jonhyIs;
-        let sardouIs;
-        let claquetteIs;
-        let slipIs;
-        let muletIs;
-        let bobIs;
-        let biereIs;
-        let ricardIs;
+        let jonhyIs = false;
+        let sardouIs = false;
+        let claquetteIs = false;
+        let slipIs = false;
+        let muletIs = false;
+        let bobIs = false;
+        let biereIs = false;
+        let ricardIs = false;
+
 
         let jonhy = document.querySelector('.jonhy');
         let sardou = document.querySelector('.sardou');
@@ -350,107 +351,89 @@
         let ricardImage = document.querySelector('.ricardImage');
 
         function jonhyMove(){
-            if ((typeof jonhyIs == 'null' ) || (jonhyIs = 'hidden')) {
+            if (jonhyIs == false) {
+                jonhyIs = true;
                 jonhyImage.style.visibility = "unset";
-                jonhyIs = "unset";
-                console.log('11111111111111')
             } else {
                 jonhyImage.style.visibility = "hidden";
-                jonhyIs = "hidden";
-                console.log('2222222222222222')
+                jonhyIs = false;
             }
         }
         jonhy.addEventListener('click', jonhyMove);
 
         function sardouMove(){
-            if ((typeof sardouIs == 'null') || (sardouIs = 'hidden')) {
+            if (sardouIs == false) {
+                sardouIs = true;
                 sardouImage.style.visibility = "unset";
-                sardouIs = "unset";
             } else {
                 sardouImage.style.visibility = "hidden";
-                sardouIs = "hidden";
+                sardouIs = false;
             }
         }
         sardou.addEventListener('click', sardouMove);
 
         function claquetteMove(){
-            if ((typeof claquetteIs == 'null') || (claquetteIs = 'hidden')) {
+            if (claquetteIs == false) {
+                claquetteIs = true;
                 claquetteImage.style.visibility = "unset";
-                claquetteIs = "unset";
             } else {
                 claquetteImage.style.visibility = "hidden";
-                claquetteIs = "hidden";
+                claquetteIs = false;
             }
         }
         claquette.addEventListener('click', claquetteMove);
 
         function slipMove(){
-            if ((typeof slipIs == 'null') || (slipIs = 'hidden')) {
+            if (slipIs == false) {
+                slipIs = true;
                 slipImage.style.visibility = "unset";
-                slipIs = "unset";
             } else {
                 slipImage.style.visibility = "hidden";
-                slipIs = "hidden";
+                slipIs = false;
             }
         }
         slip.addEventListener('click', slipMove);
 
         function muletMove(){
-            if ((typeof muletIs == 'null') || (muletIs = 'hidden')) {
+            if (muletIs == false) {
+                muletIs = true;
                 muletImage.style.visibility = "unset";
-                muletIs = "unset";
             } else {
                 muletImage.style.visibility = "hidden";
-                muletIs = "hidden";
+                muletIs = false;
             }
         }
         mulet.addEventListener('click', muletMove);
 
         function bobMove(){
-            if ((typeof bobIs == 'null') || (bobIs = 'hidden')) {
+            if (bobIs == false) {
+                bobIs = true;
                 bobImage.style.visibility = "unset";
-                bobIs = "unset";
             } else {
                 bobImage.style.visibility = "hidden";
-                bobIs = "hidden";
+                bobIs = false;
             }
         }
         bob.addEventListener('click', bobMove);
 
         function biereMove(){
-            if ((typeof biereIs == 'null') || (biereIs = 'hidden')) {
+            if (biereIs == false) {
+                biereIs = true;
                 biereImage.style.visibility = "unset";
-                biereIs = "unset";
             } else {
                 biereImage.style.visibility = "hidden";
-                biereIs = "hidden";
+                biereIs = false;
             }
         }
         biere.addEventListener('click', biereMove);
 
-        /*function ricardMove(){
-            if (typeof ricardIs == 'null') {
-                ricardImage.style.visibility = "unset";
-                ricardIs = "unset";
-                console.log('111111111')
-            } else if (ricardIs = 'unset') {
-                ricardImage.style.visibility = "hidden";
-                ricardIs = "hidden";
-                console.log('22222222222')
-            } else if (ricardIs = 'hidden'){
-                ricardImage.style.visibility = "unset";
-                ricardIs = "unset";
-                console.log('3333333333')
-
-            }*/
-
         function ricardMove(){
-            if ((typeof ricardIs == 'null') || (ricardIs = 'hidden')) {
+            if (ricardIs == false) {
+                ricardIs = true;
                 ricardImage.style.visibility = "unset";
-                ricardIs = "unset";
             } else {
                 ricardImage.style.visibility = "hidden";
-                ricardIs = "hidden";
+                ricardIs = false;
             }
         }
         ricard.addEventListener('click', ricardMove);
