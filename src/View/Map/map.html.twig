@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="cé-loader-div">
-        <h1></h1>
+        <h1>T'as qu'à t'servir un ptit jaune pendant que ça mouline <br>j'dis ça j'dis rien !</h1>
         <img src="/assets/images/loader.png" class="rotate cé-loader-img" alt="">
     </div>
     <div class="cé-map">
@@ -119,5 +119,22 @@
         pin5.addEventListener('mouseout', () => {
             card5.style.display = "none";
         });
+let loader = document.querySelector(".cé-loader-div")
+        function loaderStop() {
+            setTimeout(()=>{
+                console.log("kikou")
+            loader.style.display = "none"
+            },2500)
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                let div = document.querySelector('.cé-loader-div');
+                if (div) {
+                    div.style.display = 'none';
+                }
+            }, 3000); // 2 secondes de délai
+        });
+
     </script>
 {% endblock %}
