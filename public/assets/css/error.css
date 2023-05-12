@@ -9,10 +9,7 @@ body {
     background-color: var(--cé-blue-dark);
 
 }
-img {
-    height: 70vh;
-    margin-left: 20%;
-}
+
 h1 {
     color: var(--cé-yellow-light);
     font-family: var(--cé-font-title);
@@ -20,3 +17,20 @@ h1 {
     font-size: 60px;
     margin: 20px 0;
 }
+
+.cé-error-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cé-error-emoji1, .cé-error-emoji2{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.cé-error-mainimg {
+    height: 70vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+

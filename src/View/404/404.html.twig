@@ -6,10 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/error.css">
-    <title>Document</title>
+    <title>Error 404</title>
 </head>
 <body>
-<h1>Et bah oukiva le ptiot ?</h1>
-<img src="assets/images/erreur404.jpeg" alt="">
+<h1>Hè bah oukiva le ptiot ??</h1>
+<div class="cé-error-images">
+<img class="cé-error-emoji1" src="assets/images/emoji.png" alt="">
+<img class="cé-error-mainimg" src="assets/images/erreur404.jpeg" alt="">
+<img class="cé-error-emoji2" src="assets/images/emoji.png" alt="">
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+
+<script>
+
+    gsap.to(".cé-error-emoji1", {
+        rotation: 360,
+        repeat: -1,
+        ease: "none",
+        duration: 0.7
+    });
+
+    gsap.to(".cé-error-emoji2", {
+        rotation: 360,
+        repeat: -1,
+        ease: "none",
+        duration: 1.3
+
+    });
+
+</script>
 </body>
 </html>

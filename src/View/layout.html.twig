@@ -10,13 +10,21 @@
     <title>{% block title %}Céoukonva{% endblock %}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet/sass" href="/assets/css/fire.scss">
+    <script>
+    window.addEventListener('load', function() {
+    var cursorImage = new Image();
+    cursorImage.src = '/assets/images/ricardplein.png';
 
+    document.body.style.cursor = 'url(' + cursorImage.src + '), auto';
+    });
+</script>
     {% block stylesheet %}{% endblock %}
 </head>
 
 <body>
     {% block content %}{% endblock %}
-    {% block javascript %}{% endblock %}
+
+    {% block javascript %}    {% endblock %}
 </body>
 </html>
 

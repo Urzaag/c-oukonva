@@ -14,9 +14,25 @@ body {
     font-family: var(--cé-font-text);
 }
 
+.cé-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100px; /* ajustez la largeur en fonction de votre image */
+    max-height: 100px; /* ajustez la hauteur en fonction de votre image */
+    background: url(/assets/images/ricardplein.png) center center no-repeat;
+}
+
 .accueuil{
     cursor: url('/assets/images/ricard.png'), pointer;
 
+}
+
+#cé-home-background{
+    width: 100vw;
+    max-width: 100vw;
+    height: 85vh;
 }
 
 .btn:hover, .submit:hover {
