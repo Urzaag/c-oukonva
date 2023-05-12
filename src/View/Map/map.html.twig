@@ -1,20 +1,25 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+    <div class="cé-loader-div">
+        <h1>T'as qu'à t'servir un ptit jaune pendant que ça mouline <br>j'dis ça j'dis rien !</h1>
+        <img src="/assets/images/loader.png" class="rotate cé-loader-img" alt="">
+    </div>
     <div class="cé-map">
         <div>
             <div class="cé-map-h1-container">
                 <h1>CéLAKONVA !</h1>
             </div>
-
+            <a href="/"><img src="/assets/images/retour.png" alt="" class="retour">
+            <p class="bercail">Retour au bercail !</p></a>
             <div class="display1">
                 <div class="card célacard célacard1 mb-3" id="célacard1">
                     <img src="/assets/images/couple.png" class="card-img-top" alt="camping card sous la neige">
                     <div class="card-body">
                         <h5 class="card-title">Domaine de la Pinède en Baie de Canche</h5>
-                        <p class="card-text">Pour ces soirées hawaïenne qui font monter la température</p>
-                        <h6>Température actuelle : {{ temp1 }}°C <br>
-                        {{ phrase1 }}</h6>
+                        <p class="card-text">Pour ces soirées hawaïenne au Shogun qui font monter la température !</p>
+                        <p class="temp">Température actuelle : {{ temp1 }}°C </p>
+                        <h6>"{{ phrase1 }}"</h6>
                     </div>
                 </div>
             </div>
@@ -24,8 +29,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping Les Flots Bleus</h5>
                         <p class="card-text">Pour son prestigieux concours de barbecue. Jean-Michel le gagnant de l'année dernière sera là pour remettre son prix en jeu.</p>
-                        <p class="card2temp">Température actuelle : {{ temp2 }}°C</p>
-                        <p class="card2phrase">{{ phrase2 }}</p>
+                        <p class="temp">Température actuelle : {{ temp2 }}°C</p>
+                        <h6 class="card2phrase">"{{ phrase2 }}"</h6>
                     </div>
                 </div>
             </div>
@@ -35,8 +40,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping du Lac VAP!</h5>
                         <p class="card-text">Pour un vrai moment d'évasion à la montagne et le merveilleux duo pêche à la truite Heineken !</p>
-                        <h6 class="card3temp">Température actuelle : {{ temp3 }}°C <br>
-                        {{ phrase3 }}</h6>
+                        <p class="temp">Température actuelle : {{ temp3 }}°C </p>
+                        <h6>"{{ phrase3 }}"</h6>
                     </div>
                 </div>
             </div>
@@ -46,9 +51,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping Beach Garden</h5>
                         <p class="card-text">A NE PAS LOUPER ! Le sosie officiel de Johnny sera présent pour un concert exclusif.</p>
-                        <h6>Température actuelle : {{ temp4 }}°C <br>
-                        {{ phrase4 }}
-                        </h6>
+                        <p class="temp">Température actuelle : {{ temp4 }}°C </p>
+                        <h6>"{{ phrase4 }}"</h6>
                     </div>
                 </div>
             </div>
@@ -58,8 +62,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camping La Pierre Verte</h5>
                         <p class="card-text">Pour son célèbre concours miss camping présenté depuis 20 ans par Gégé.</p>
-                        <h6>Température actuelle : {{ temp5 }}°C <br>
-                        {{ phrase5 }}</h6>
+                        <p class="temp">Température actuelle : {{ temp5 }}°C </p>
+                        <h6>"{{ phrase5 }}"</h6>
                     </div>
                 </div>
             </div>
@@ -115,5 +119,22 @@
         pin5.addEventListener('mouseout', () => {
             card5.style.display = "none";
         });
+let loader = document.querySelector(".cé-loader-div")
+        function loaderStop() {
+            setTimeout(()=>{
+                console.log("kikou")
+            loader.style.display = "none"
+            },2500)
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                let div = document.querySelector('.cé-loader-div');
+                if (div) {
+                    div.style.display = 'none';
+                }
+            }, 3000); // 2 secondes de délai
+        });
+
     </script>
 {% endblock %}
