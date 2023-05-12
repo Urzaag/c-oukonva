@@ -6,8 +6,15 @@ body {
     position: absolute;
     top: 5%;
 }
-.retour:hover{
+.retour:hover, .bercail:hover{
     cursor: url("/assets/images/heineken.png"), pointer;
+}
+.bercail{
+    position: absolute;
+    top: 25%;
+    text-decoration: none;
+    color: #EBBF49;
+    font-size: 1.5rem;
 }
 .cé-map {
     display: flex;
@@ -288,7 +295,7 @@ body {
     left: 50%;
     margin: auto;
     width: 200px;
-    animation: rotation 2s infinite linear;
+    animation: rotation 2s 3 linear;
 }
 
 @keyframes rotation {
