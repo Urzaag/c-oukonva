@@ -16,5 +16,5 @@ return [
     'map/sort' => ['HomeController', 'sort'],
     'map' => ['MapController', 'index'],
     'ilvaoùlui' => ['ErrorController', 'index'],
-    'argeles' => ['ArgelesController', 'argeles']
+    'argeles' => ['ArgelesController', 'argeles'],
 ];

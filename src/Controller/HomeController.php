@@ -101,9 +101,9 @@ class HomeController extends AbstractController
             $temp1 = $data['main']['temp'];
             if ($temp1 < 12) {
                 $phrase1 = 'On s\'caille les miches ici ou quoi';
-            } elseif ($temp1 >= 12 && $temp1 < 14) {
+            } elseif ($temp1 >= 12 && $temp1 < 16) {
                 $phrase1 = 'Allez ressers moué la ch\'tite soeur qu\'on oublie ce temps d\'chiotte';
-            } elseif ($temp1 >= 14 && $temp1 < 16) {
+            } elseif ($temp1 >= 16 && $temp1 < 30) {
                 $phrase1 = 'C\'est parti mon kiki on file à la pistoche !';
             } else {
                 $phrase1 = 'Tu penses bien qu\'j\'ai po qu\'ça qu\'à foutre moi d\'écrire toutes les témpératures hein';

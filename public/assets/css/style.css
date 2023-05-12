@@ -15,13 +15,16 @@ body {
 }
 
 .cé-loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100px; /* ajustez la largeur en fonction de votre image */
-    max-height: 100px; /* ajustez la hauteur en fonction de votre image */
-    background: url(/assets/images/ricardplein.png) center center no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cé-blue-light);
+    z-index: 30;
+}
+#cé-loader-img{
+    position: absolute;
+    top: 15vh;
+    left: 70vh;
 }
 
 .accueuil{
