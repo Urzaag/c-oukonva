@@ -359,6 +359,7 @@ canvas {
 
 .cé-pétanque * {
     position: absolute;
+    background-size: cover;
 }
 
 .cé-pétanque-terrain {
@@ -379,6 +380,34 @@ canvas {
     width: 100px;
 }
 
+.cé-terrain {
+    background-image: url("/assets/images/terrainpétanque.jpg");
+    background-size: cover;
+    rotate: 90deg;
+    right: 0;
+    top: 126%;
+    height: 200px;
+    width: 400px;
+}
+
+.cé-cochonnet {
+    background-image: url("/assets/images/cochonnet.png");
+    width: 25px;
+    height: 25px;
+    right: 13%;
+    top: 115%;
+    background-size: contain;
+    z-index: 2;
+}
+
+.cé-boule {
+    background-image: url("/assets/images/boulespétanque.png");
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
 .cé-pétanque-boule-1 {
     right: 10%;
     width: 50px;
@@ -395,6 +424,25 @@ canvas {
     right: 12%;
     top: 173%;
     width: 50px;
+}
+
+.cé-boule-1 {
+    right: 10%;
+    width: 50px;
+    top: 120%;
+}
+
+.cé-boule-2 {
+    right: 15%;
+    width: 50px;
+    top: 130%;
+}
+
+.cé-boule-3 {
+    right: 12%;
+    top: 173%;
+    width: 50px;
+    cursor: pointer !important;
 }
 
 .cé-tray {

@@ -34,11 +34,14 @@
             </canvas>
         </div>
         <div class="cé-pétanque">
-            <img src="/assets/images/terrainpétanque.jpg" class="cé-pétanque-terrain">
-            <img src="/assets/images/cochonnet.png" class="cé-pétanque-cochonnet">
-            <img src="/assets/images/boulespétanque.png" class="cé-pétanque-boule cé-pétanque-boule-1">
-            <img src="/assets/images/boulespétanque.png" class="cé-pétanque-boule cé-pétanque-boule-2">
-            <img src="/assets/images/boulespétanque.png" class="cé-pétanque-boule cé-pétanque-boule-3">
+
+
+            <div class="cé-cochonnet"></div>
+            <div class="cé-boule cé-boule-1"></div>
+            <div class="cé-boule cé-boules cé-boule-2"></div>
+            <div class="cé-boule cé-boules cé-boule-3"></div>
+            <div class="cé-terrain">
+            </div>
         </div>
         <p>Bienvenue sur Céoukonva, le site ultime de réservation de camping pour les bons vivants assumés ! Préparez-vous à vivre des aventures en plein air, avec une dose d'humour gras et lourd. Notre concept unique repose sur des questions décalées pour vous guider vers les campings qui correspondent à votre style de vie particulier.</p>
 
@@ -248,21 +251,113 @@
             }
         })
 
-        let boule1 = document.querySelector(".cé-pétanque-boule-1");
-        let boule2 = document.querySelector(".cé-pétanque-boule-2");
-        let boule3 = document.querySelector(".cé-pétanque-boule-3");
+        let boule1 = document.querySelector(".cé-boule-1");
+        let boules = document.querySelectorAll(".cé-boules");
+        let boule2 = document.querySelector(".cé-boule-2");
+        let boule3 = document.querySelector(".cé-boule-3");
 
-        Draggable.create(boule1, {
-            inertia: true
+        let BOULE_DRAG = false;
+
+        let BOULE_START_X = 0;
+        let BOULE_START_Y = 0;
+
+        let BOULE_END_X = 0;
+        let BOULE_END_Y = 0;
+
+        let FORCE = 0;
+
+        let terrain = document.querySelector(".cé-terrain");
+        let terrainLeft = terrain.getBoundingClientRect().left;
+        let terrainRight = terrain.getBoundingClientRect().right;
+        let terrainTop = terrain.getBoundingClientRect().top;
+        let terrainBottom = terrain.getBoundingClientRect().bottom;
+        console.log(terrain.getBoundingClientRect());
+
+        let boule1Left = boule1.getBoundingClientRect().left;
+        let boule1Right = boule1.getBoundingClientRect().right;
+        let boule1Top = boule1.getBoundingClientRect().top;
+        let boule1Bottom = boule1.getBoundingClientRect().bottom;
+
+        let boule2Left = boule2.getBoundingClientRect().left;
+        let boule2Right = boule2.getBoundingClientRect().right;
+        let boule2Top = boule2.getBoundingClientRect().top;
+        let boule2Bottom = boule2.getBoundingClientRect().bottom;
+
+        let boule3Left = boule3.getBoundingClientRect().left;
+        let boule3Right = boule3.getBoundingClientRect().right;
+        let boule3Top = boule3.getBoundingClientRect().top;
+        let boule3Bottom = boule3.getBoundingClientRect().bottom;
+
+        const handleGrab = () => {
+            BOULE_DRAG = true;
+            BOULE_START_X = event.pageX;//parseInt(boule1.style.left);
+            BOULE_START_Y = event.pageY;//parseInt(boule1.style.top);
+        }
+
+        const handleDragBoule = (event) => {
+            if (!BOULE_DRAG) return;
+
+            let mouseX = event.pageX;
+            let mouseY = event.pageY;
+            boule3.style.top = mouseY - 20 + "px";
+            boule3.style.left = mouseX - 20 +"px";
+
+            BOULE_END_X = event.pageX;//parseInt(boule3.style.left);
+            BOULE_END_Y = event.pageY;//parseInt(boule3.style.top);
+        }
+
+        const handleThrowBoule = () => {
+            BOULE_DRAG = false;
+
+            let {angle_rad} = angleCalc();
+
+            setInterval(() => {
+                boule3.style.top = parseInt(boule3.style.top) - Math.cos(angle_rad)*10 + "px";
+                boule3.style.left = parseInt(boule3.style.left) - Math.sin(angle_rad)*10 + "px";
+
+                console.log(boule3Left);
+            }, 2000/FORCE);
+
+            if (boule3Left <= terrainLeft) {
+                console.log('test');
+                angle_rad = -angleCalc();
+            }
+            /*setTimeout(() => {
+                for (let i = 0; i < boules.length; i++) {
+                    boules[i].
+                }
+            })*/
+        }
+
+        const angleCalc = () => {
+            let adj = BOULE_END_Y - BOULE_START_Y;
+            let opp = BOULE_END_X - BOULE_START_X;
+            let tan = opp/adj;
+            let angle_rad = Math.atan(tan);
+            FORCE = Math.sqrt(Math.pow(opp,2) + Math.pow(adj, 2));
+
+            calc = {
+                adj,
+                angle_rad
+            }
+
+            return calc;
+        }
+
+        boule3.addEventListener("pointerdown", handleGrab);
+        boule3.addEventListener("pointerup", handleThrowBoule);
+        document.addEventListener("pointermove", handleDragBoule);
+
+
+
+        /*Draggable.create(boule1, {
         })
 
         Draggable.create(boule2, {
-            inertia: true
         })
 
         Draggable.create(boule3, {
-            type: "rotation"
-        })
+        })*/
 
         Draggable.create(".cé-alu", {
         });
