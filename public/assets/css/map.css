@@ -111,33 +111,45 @@ body {
     font-family: var(--cé-font-text);
 }
 
+.célacard h6 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
 /* Card 1 couple */
 .célacard1 {
     position: relative;
-    height: 30rem;
+    height: 24rem;
 }
 
 .célacard1 .card-body h5 {
-    width: 25rem;
+    width: 33rem;
     position: absolute;
-    left: 10rem;
+    left: 1rem;
 }
 
 .célacard1 .card-body p {
-    width: 10rem;
+    width: 20rem;
     position: absolute;
     top: 7rem;
-    left: 20rem;
+    left: 13rem;
 }
-.célacard1 .card-body h6 {
-    width: 10rem;
+.célacard1 .card-body .temp {
+    width: 15rem;
     position: absolute;
-    top: 15rem;
+    top: 11rem;
+    left: 17rem;
+}
+
+.célacard1 .card-body h6 {
+    width: 14rem;
+    position: absolute;
+    top: 14rem;
     left: 20rem;
 }
 
 .célacard1 img {
-    width: 18rem;
+    width: 20rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -146,17 +158,17 @@ body {
 /* Card 2 barbecue */
 .célacard2 {
     position: relative;
-    height: 30rem;
+    height: 24rem;
 }
 
 .célacard2 .card-body {
-    width: 13rem;
+    width: 22rem;
     position: absolute;
-    left: 12rem;
+    left: 13rem;
 }
 
 .célacard2 img {
-    width: 11rem;
+    width: 13rem;
     position: absolute;
     bottom: 0rem;
     left: 1rem;
@@ -165,30 +177,38 @@ body {
 /* Card 3 peche à la truite */
 .célacard3 {
     position: relative;
-    height: 30rem;
+    height: 24rem;
 }
 
 .célacard3 .card-body h5 {
-    width: 25rem;
+    width: 30rem;
     position: absolute;
-    left: 0rem;
+    left: 2rem;
 }
 
 .célacard3 .card-body p {
-    width: 12rem;
+    width: 20rem;
     position: absolute;
-    left: 15rem;
+    left: 13rem;
     top: 6rem;
 }
+
+.célacard3 .card-body .temp {
+    width: 20rem;
+    position: absolute;
+    left: 15rem;
+    top: 13rem;
+}
+
 .célacard3 .card-body h6 {
     width: 12rem;
     position: absolute;
-    left: 15rem;
+    left: 20rem;
     top: 15rem;
 }
 
 .célacard3 img {
-    width: 17rem;
+    width: 19rem;
     position: absolute;
     bottom: 0rem;
     left: 1rem;
@@ -197,7 +217,7 @@ body {
 /* Card 4 sosie */
 .célacard4 {
     position: relative;
-    height: 30rem;
+    height: 24rem;
 }
 
 .célacard4 .card-body{
@@ -208,19 +228,27 @@ body {
 .célacard4 .card-body h5{
     width: 15rem;
     position: absolute;
-    left: 5rem;
+    left: 6rem;
 }
-.célacard4 .card-body h6{
+.célacard4 .card-body p{
+    width: 18rem;
+    position: absolute;
+    left: 5rem;
+    top: 7rem;
+}
+
+.célacard4 .card-body .temp{
     width: 15rem;
     position: absolute;
     left: 5rem;
     top: 14rem;
 }
-.célacard4 .card-body p{
-    width: 15rem;
+
+.célacard4 .card-body h6{
+    width: 21rem;
     position: absolute;
-    left: 5rem;
-    top: 8rem;
+    left: 2rem;
+    top: 16rem;
 }
 
 .célacard4 img {
@@ -232,17 +260,23 @@ body {
 /* Card 5 miss camping */
 .célacard5 {
     position: relative;
-    height: 30rem;
+    height: 24rem;
 }
 
 .célacard5 .card-body{
-    width: 15rem;
+    width: 23rem;
     position: relative;
     left: 10rem;
 }
 
+.célacard5 .card-body h6{
+    width: 21rem;
+    position: relative;
+    left: 2rem;
+}
+
 .célacard5 img {
-    width: 18rem;
+    width: 20rem;
     position: absolute;
     bottom: -1rem;
     left: -2rem;
