@@ -14,17 +14,17 @@ body {
     font-family: var(--cé-font-text);
 }
 
-.cé-loader {
+.cé-loader-div {
     position: absolute;
     height: 100vh;
     width: 100vw;
     background-color: var(--cé-blue-light);
     z-index: 30;
 }
-#cé-loader-img{
+.cé-loader-img{
     position: absolute;
-    top: 15vh;
-    left: 70vh;
+    top: 40%;
+    left: 40%;
 }
 
 .accueuil{
