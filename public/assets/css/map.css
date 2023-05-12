@@ -269,15 +269,15 @@ body {
 }
 
 .célacard5 img {
-    width: 22rem;
+    width: 20rem;
     position: absolute;
     bottom: -1rem;
     left: -2rem;
 }
 
-/*.display1, .display2, .display3, .display4, .display5 {
+.display1, .display2, .display3, .display4, .display5 {
     display: none;
-}*/
+}
 
 .display {
     display: flex;
