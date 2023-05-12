@@ -138,12 +138,12 @@ body {
     padding: 10px;
     letter-spacing: 1px;
     text-decoration: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
     color: #fff;
     font-weight: 400px;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
-    /*backdrop-filter: blur(15px);*/
+    backdrop-filter: blur(15px);
 }
 .containerQuestions .btn:hover label {
     letter-spacing: 3px;
@@ -233,12 +233,14 @@ body {
     width: 80%;
     border-radius: 30px;
 }
+
 .containerQuestions .btn:hover::after /*lightup button*/ {
     top: 0;
     height: 100%;
     width: 80%;
     border-radius: 30px;
 }
+
 .submit{
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 12px 30px #99D9EA, 0 -12px 30px #99D9EA, 0 4px 6px #99D9EA, 0px 12px 13px #99D9EA, 0px -3px 5px #99D9EA;

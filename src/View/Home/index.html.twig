@@ -5,7 +5,7 @@
     <section class="accueuil">
     <div class="cé-navbar">
         <img class="cé-place-apero" src="assets/images/place-apero.jpeg" alt="">
-        <img class="cé-bagnole" src="assets/images/bagnole.png" alt="bagnole">
+        <img class="cé-bagnole" src="assets/images/bagnolejaune.png" alt="bagnole">
         <img class="cé-rue-soif" src="assets/images/rue-soif.jpeg" alt="">
     </div>
     <div class="cé-headercontainer">
@@ -350,7 +350,7 @@
         let ricardImage = document.querySelector('.ricardImage');
 
         function jonhyMove(){
-            if (typeof jonhyIs == 'null') {
+            if ((typeof jonhyIs == 'null' ) || (jonhyIs = 'hidden')) {
                 jonhyImage.style.visibility = "unset";
                 jonhyIs = "unset";
                 console.log('11111111111111')
@@ -443,7 +443,7 @@
                 console.log('3333333333')
 
             }*/
-        //}
+
         function ricardMove(){
             if ((typeof ricardIs == 'null') || (ricardIs = 'hidden')) {
                 ricardImage.style.visibility = "unset";
