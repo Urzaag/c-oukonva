@@ -20,7 +20,8 @@ class HomeController extends AbstractController
         $question1 = $question2 = $question3 = $question4 = "";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            if (isset($_POST['question1'])) {
+
+             if (isset($_POST['question1'])) {
                 $question1 = $_POST['question1'];
             } else {
                 $question1 = 'jonhy';
@@ -52,6 +53,7 @@ class HomeController extends AbstractController
                 $question3 = 'bob';
                 $question4 = 'biere';
             }
+
 
             $itemManager = new ItemManager();
             $result = $itemManager->sort($question1, $question2, $question3, $question4);
@@ -127,11 +129,11 @@ class HomeController extends AbstractController
             // $content = ['id' => 521583, 'name' => 'symfony-docs', ...]
             $data = json_decode($content, true);
             $temp2 = $data['main']['temp'];
-            if ($temp2 < 12) {
+            if ($temp2 < 6) {
                 $phrase2 = 'On s\'caille les miches ici ou quoi';
-            } elseif ($temp2 >= 12 && $temp2 < 14) {
+            } elseif ($temp2 >= 6 && $temp2 < 12) {
                 $phrase2 = 'Allez ressers moué la ch\'tite soeur qu\'on oublie ce temps d\'chiotte';
-            } elseif ($temp2 >= 14 && $temp2 < 16) {
+            } elseif ($temp2 >= 12 && $temp2 < 20) {
                 $phrase2 = 'C\'est parti mon kiki on file à la pistoche !';
             } else {
                 $phrase2 = 'Tu penses bien qu\'j\'ai po qu\'ça qu\'à foutre moi d\'écrire toutes les témpératures hein';
