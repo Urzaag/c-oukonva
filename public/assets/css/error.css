@@ -9,7 +9,20 @@ body {
     background-color: var(--cé-blue-dark);
 
 }
-
+.retour{
+    height: 20vh;
+    margin-left: 69vh;
+}
+.retour:hover, .bercail:hover{
+    cursor: url("/assets/images/heineken.png"), pointer;
+}
+.bercail{
+    margin-top: 5vh;
+    text-decoration: none;
+    color: #EBBF49;
+    font-size: 2rem;
+    margin-left: 65vh;
+}
 h1 {
     color: var(--cé-yellow-light);
     font-family: var(--cé-font-title);
