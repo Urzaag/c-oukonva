@@ -2,6 +2,7 @@
 
 {% block content %}
     <body>
+
     <section class="accueuil">
     <div class="cé-navbar">
         <img class="cé-place-apero" src="assets/images/place-apero.jpeg" alt="">
@@ -20,6 +21,8 @@
         <img src="/assets/images/sacricard.webp" alt="sac" class="cé-sacricard">
         <img src="/assets/images/picole.webp" alt="picole" class="cé-picole">
         <h1 class="cé-headertitle">CéOUKONVA ??</h1>
+        <img src="/assets/images/beaubackground.png" alt="" id="cé-home-background">
+        <h1 class="cé-headertitle">CÉOUKONVA ??</h1>
     </div>
 
     <div class="backgroundQuestions">
@@ -126,12 +129,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script>
-        gsap.to(".cé-bigard", {
-            rotation: 50,
-            repeat: -1,
-            ease: "none",
-            yoyo: true
-        });
+
 
         gsap.to(".cé-johnny", {
             rotation: 20,
@@ -445,10 +443,10 @@
         }
 
         // Récupérer l'élément de l'image
-        var image = document.querySelector('#bigard');
+        var bigard = document.querySelector('#bigard');
 
         // Ajouter un gestionnaire d'événements au clic sur l'image
-        image.addEventListener('click', function() {
+        bigard.addEventListener('click', function() {
             jouerSon();
         });
     </script>
