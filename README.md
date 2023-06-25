@@ -1,11 +1,14 @@
-# Simple MVC
+# Céoukonva ?
 
 ## Description
 
-This repository is a simple PHP MVC structure from scratch.
+This repository is the result of a 24h long hackaton during which, as a team of 4, we had to develop a web application according to one theme : holidays.
 
-It uses some cool vendors/libraries such as Twig and Grumphp.
-For this one, just a simple example where users can choose one of their databases and see tables in it.
+We decided to take the funny road and tried to picture ourselves as 'beaufs'. This solution provides a way for beaufs to find the best camping sites regarding their favorites criteria : Johnnny Hallyday or Michel Sardou ? Beer or Ricard ? ...
+
+This project was really challenging because of the little time we had and because this solution is mainly based on JavaScript, a language we did not master. But we learned it the hard way and ended up first place equal with another group.
+
+It uses some cool vendors/libraries such as Gsap, Twig and Grumphp.
 
 ## Steps
 
@@ -30,35 +33,6 @@ define('APP_DB_PASSWORD', 'your_db_password');
 If you develop on Windows, you should edit you git configuration to change your end of line rules with this command :
 
 `git config --global core.autocrlf true`
-
-## Example
-
-An example (a basic list of items) is provided (you can load the _simple-mvc.sql_ file in a test database). The accessible URLs are :
-
--   Home page at [localhost:8000/](localhost:8000/)
--   Items list at [localhost:8000/items](localhost:8000/items)
--   Item details [localhost:8000/items/show?id=:id](localhost:8000/item/show?id=2)
--   Item edit [localhost:8000/items/edit?id=:id](localhost:8000/items/edit?id=2)
--   Item add [localhost:8000/items/add](localhost:8000/items/add)
--   Item deletion [localhost:8000/items/delete?id=:id](localhost:8000/items/delete?id=2)
-
-You can find all these routes declared in the file `src/routes.php`. This is the very same file where you'll add your own new routes to the application.
-
-## How does URL routing work ?
-
-![simple_MVC.png](.tours/simple_MVC.png)
-
-## Ask for a tour !
-
-<img src="./.tours/photo-1632178151697-fd971baa906f.jpg" alt="Guided tour" width="150"/>
-
-We prepare a little guided tour to start with the simple-MVC.
-
-To take it, you need to install the `Code Tour` extension for Visual Studio Code : [Code Tour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)
-
-It will give access to a new menu on your IDE where you'll find the different tours about the simple-MVC. Click on play to start one :
-
-![menu](.tours/code_tour_menu.png)
 
 ## Run it on docker
 
